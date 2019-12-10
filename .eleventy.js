@@ -70,9 +70,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("netlify.toml");
 
   // RSS
-  module.exports = function(eleventyConfig) {
-    eleventyConfig.addPlugin(pluginRss);
-  };
+  
+  eleventyConfig.addPlugin(pluginRss);
 
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
