@@ -67,6 +67,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("_includes/assets/");
   eleventyConfig.addPassthroughCopy("site.webmanifest");
   eleventyConfig.addPassthroughCopy("feed.xml");
+  eleventyConfig.addPassthroughCopy("netlify.toml");
 
   // RSS
   module.exports = function(eleventyConfig) {

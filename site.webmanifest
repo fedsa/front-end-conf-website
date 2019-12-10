@@ -7,17 +7,17 @@
   "theme_color": "#ffffff",
   "icons": [
     {
-      "src": "/android-chrome-144x144.png",
+      "src": "./static/images/favicon/android-chrome-144x144.png",
       "sizes": "144x144",
       "type": "image/png"
     },
     {
-      "src": "/android-chrome-192x192.png",
+      "src": "./static/images/favicon/android-chrome-192x192.png",
       "sizes": "192X192",
       "type": "image/png"
     },
     {
-      "src": "/android-chrome-512x512.png",
+      "src": "./static/images/favicon/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
