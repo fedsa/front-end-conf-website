@@ -1,9 +1,8 @@
 ---
-title: About us
-date: 2019-12-02
+title: About front-end conf 2020
+date: 2019-12-02T00:00:00.000Z
 permalink: /about/index.html
 navtitle: About
-order: 2
 tags:
   - nav
 ---
