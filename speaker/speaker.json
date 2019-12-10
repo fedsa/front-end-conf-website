@@ -1,0 +1,5 @@
+{
+  "layout": "layouts/speaker-single.njk",
+  "permalink": "speaker/{{ title | slug }}/index.html",
+  "tags": "speaker"
+}

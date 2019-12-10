@@ -1,0 +1,29 @@
+<!doctype html>
+<html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
+
+	{% include "components/head.njk" %}
+
+	<body>
+
+		<header>
+			<h1>
+				<a href="{{ '/' | url }}">
+					{% include "components/logo.njk" %}
+					<span class="is-visually-hidden">{{ metadata.title }}</span>
+				</a>
+			</h1>
+			{% include "components/nav.njk" %}
+			<a href="#" class="btn--primary">
+				Get your tickets
+			</a>
+		</header>
+
+		<main>
+			{{ layoutContent | safe }}
+		</main>
+
+		{% include "components/footer.njk" %}
+
+	</body>
+
+</html>
