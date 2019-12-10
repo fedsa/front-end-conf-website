@@ -5,7 +5,7 @@ tags:
   - nav
 navtitle: Contact
 section: contact
-date: 2018-01-01
+date: 2019-12-06
 permalink: /contact/index.html
 ---
 The contact form on this page uses

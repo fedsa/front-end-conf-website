@@ -1,0 +1,17 @@
+<!doctype html>
+<html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
+
+	{% include "components/head.njk" %}
+
+	<body>
+		<section class="coming-soon">
+			<h1>
+				{% include "components/logo.njk" %}
+			</h1>
+
+			{{ layoutContent | safe }}
+
+		</section>
+	</body>
+
+</html>

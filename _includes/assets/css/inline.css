@@ -77,7 +77,7 @@ footer {
 }
 
 main {
-	padding-bottom: 2em;
+	padding: 0 2em;
 	/* padding: var(--side-margin); */
 }
 
@@ -267,3 +267,12 @@ button {
 	vertical-align: middle;
 	white-space: nowrap;
 }
+
+.coming-soon {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 80vh;
+}
+
