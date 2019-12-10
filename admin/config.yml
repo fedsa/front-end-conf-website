@@ -12,19 +12,23 @@ media_folder: "static/images" # Media files will be stored in the repo under ima
 collections:
 
   # Home page
-  - name: "home"
-    label: "home-page"
-    file: "index.html"
-    preview_path: '{{slug}}'
-      fields:
-        - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
-        - label: "Meta"
-          name: "meta"
-          widget: "object"
-          fields:
-            - {label: "Title", name: "title", widget: "string"}
-            - {label: "Meta Description", name: "meta", widget: "string"}
-            - {label: "Keywords", name: "keywords", widget: "string"}
+  - label: "Home Page"
+    name: "home-page"
+    files:
+
+      - label: "Home Page"
+        name: "home-page"
+        file: "ARL.Web/cms/index.html"
+        preview_path: '{{slug}}'
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
+          - label: "Meta"
+            name: "meta"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Meta Description", name: "meta", widget: "string"}
+              - {label: "Keywords", name: "keywords", widget: "string"}
     
   # Our speakers
   - name: "speaker"
