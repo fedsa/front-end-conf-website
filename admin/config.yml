@@ -28,7 +28,7 @@ collections:
       - name: "home"
         label: "Homepage"
         delete: false
-        file: "index.html"
+        file: "index.md"
         slug: "{{slug}}"
         create: false
         fields:
