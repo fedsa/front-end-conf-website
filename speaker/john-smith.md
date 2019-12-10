@@ -1,7 +1,7 @@
 ---
-title: John Smith
+title: John Richard Smith
+date: 2019-12-09T00:00:00.000Z
 summary: Why contemplating our mortality can be a powerful catalyst for change
-date: 2019-12-09
 tags:
   - speaker
   - tech
