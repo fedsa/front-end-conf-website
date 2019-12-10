@@ -18,7 +18,7 @@ collections:
 
       - label: "Home Page"
         name: "home-page"
-        file: "ARL.Web/cms/index.html"
+        file: "index.html"
         preview_path: '{{slug}}'
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
