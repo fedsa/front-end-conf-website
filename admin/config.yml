@@ -11,24 +11,24 @@ media_folder: "static/images" # Media files will be stored in the repo under ima
 
 collections:
 
-  # Home page
-  - label: "Home Page"
-    name: "home-page"
+  - name: "pages"
+    label: "Pages"
     files:
-
-      - label: "Home Page"
-        name: "home-page"
-        file: "index.html"
-        preview_path: '{{slug}}'
+      - name: "home"
+        label: "Homepage"
+        delete: false
+        file: "pages/home.md"
+        slug: "{{slug}}"
+        create: false
         fields:
-          - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
-          - label: "Meta"
-            name: "meta"
-            widget: "object"
-            fields:
-              - {label: "Title", name: "title", widget: "string"}
-              - {label: "Meta Description", name: "meta", widget: "string"}
-              - {label: "Keywords", name: "keywords", widget: "string"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/home.njk"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
+          - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
+          - {label: "Post Feed Heading", name: "postsHeading", widget: "string", default: "Latest posts"}
+          - {label: "Archive Link Text", name: "archiveButtonText", widget: "string", default: "See all posts"}
+          - {label: "Social Image", name: "socialImage", widget: "image", required: false}
+          - {label: "Body", name: "body", widget: "markdown"}
     
   # Our speakers
   - name: "speaker"
