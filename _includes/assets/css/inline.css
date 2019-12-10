@@ -116,6 +116,10 @@ header > h1 {
 	margin: .67em 0;
 }
 
+.home-link {
+	display: flex;
+}
+
 .svg-logo {
 	height: 45px;
 	width: 250px;
