@@ -1,0 +1,5 @@
+{
+  "layout": "layouts/schedule-single.njk",
+  "permalink": "schedule/{{ title | slug }}/index.html",
+  "tags": "schedule"
+}
