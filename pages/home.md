@@ -1,10 +1,9 @@
 ---
 layout: layouts/home.njk
-# layout: layouts/coming-soon.njk
 title: Home
-date: 2016-01-01T00:00:00.000Z
-permalink: /
-section: home
+metaTitle: Frontend 2020 Home Page
+metaDesc: A descripion here please
+socialImage: /static/images/feconf-logo.png
 ---
 
 # We are here
