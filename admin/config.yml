@@ -11,6 +11,17 @@ media_folder: "static/images" # Media files will be stored in the repo under ima
 
 collections:
 
+  - label: "Globals"
+    name: "globals"
+    files:
+      - label: "Site Data"
+        name: "site_data"
+        delete: false
+        file: "_data/metadata.json"
+        fields:
+          - {label: "Site Name", name: "name", widget: "string"}
+          - {label: "Site Url", name: "url", widget: "string"}
+
   - name: "pages"
     label: "Pages"
     files:
@@ -25,8 +36,6 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
           - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
-          - {label: "Post Feed Heading", name: "postsHeading", widget: "string", default: "Latest posts"}
-          - {label: "Archive Link Text", name: "archiveButtonText", widget: "string", default: "See all posts"}
           - {label: "Social Image", name: "socialImage", widget: "image", required: false}
           - {label: "Body", name: "body", widget: "markdown"}
     
