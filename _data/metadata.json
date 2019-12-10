@@ -1,9 +1,4 @@
 {
-  "title": "Front-end conference 2020",
-  "url": "https://feconf2020.netlify.com",
-  "author": {
-    "name": "Justin Slack",
-    "email": "justin@justinslack.com",
-    "github": "https://github.com/justinslack"
-  }
+  "name": "feconf2020",
+  "url": "https://feconf2020.netlify.com"
 }
