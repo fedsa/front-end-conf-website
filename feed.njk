@@ -1,27 +1,26 @@
----json
-{
-  "permalink": "feed.xml",
-  "eleventyExcludeFromCollections": true,
-  "metadata": {
-    "title": "My Blog about Boats",
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
-    "url": "https://example.com/",
-    "feedUrl": "https://example.com/feed.xml",
-    "author": {
-      "name": "Boaty McBoatFace",
-      "email": "me@example.com"
-    }
-  }
-}
+---
+permalink: feed.xml
+metadata:
+  title: My Blog Title
+  url: http://example.com/
+  author:
+    name: My Name
+    email: myemailaddress@example.com
+  feed:
+    subtitle: I am writing about my experiences as a naval navel-gazer.
+    filename: feed.xml
+    path: feed/feed.xml
+    url: https://example.com/feed.xml
+    id: https://example.com/
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>{{ metadata.title }}</title>
-  <subtitle>{{ metadata.subtitle }}</subtitle>
-  <link href="{{ metadata.feedUrl }}" rel="self"/>
+  <subtitle>{{ metadata.feed.subtitle }}</subtitle>
+  <link href="{{ metadata.feed.url }}" rel="self"/>
   <link href="{{ metadata.url }}"/>
   <updated>{{ collections.posts | rssLastUpdatedDate }}</updated>
-  <id>{{ metadata.url }}</id>
+  <id>{{ metadata.feed.id }}</id>
   <author>
     <name>{{ metadata.author.name }}</name>
     <email>{{ metadata.author.email }}</email>
