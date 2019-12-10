@@ -60,6 +60,13 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  // only content in the `schedule/` directory
+  eleventyConfig.addCollection("schedule", function (collection) {
+    return collection.getAllSorted().filter(function (item) {
+      return item.inputPath.match(/^\.\/schedule\//) !== null;
+    });
+  });
+
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("static/images");
