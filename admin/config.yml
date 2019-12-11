@@ -25,6 +25,7 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
+      # Home page
       - name: "home"
         label: "Homepage"
         delete: false
@@ -38,6 +39,7 @@ collections:
           - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
           - {label: "Social Image", name: "socialImage", widget: "image", required: false}
           - {label: "Body", name: "body", widget: "markdown"}
+      # About page      
       - name: "about"
         label: "About page"
         delete: false
@@ -55,56 +57,81 @@ collections:
           - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
           - {label: "Social Image", name: "socialImage", widget: "image", required: false}
           - {label: "Body", name: "body", widget: "markdown"}
+      # Speakers page      
+      - name: "speakers"
+        label: "Speakers page"
+        delete: false
+        file: "pages/speakers.md"
+        slug: "{{slug}}"
+        create: false
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "speaker"}
+          - {label: "Title", name: "title", widget: "string"}
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - {label: "Tags", name: "tags", widget: "string"}
+          - {label: "Permalink", name: "permalink", widget: "string"}
+          - {label: "Nav title", name: "navtitle", widget: "string"}
+          - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
+          - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
+          - {label: "Social Image", name: "socialImage", widget: "image", required: false}
+          - {label: "Body", name: "body", widget: "markdown"}
+      # Schedule page      
+      - name: "schedule"
+        label: "Schedule page"
+        delete: false
+        file: "pages/schedule.md"
+        slug: "{{slug}}"
+        create: false
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "schedule"}
+          - {label: "Title", name: "title", widget: "string"}
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - {label: "Tags", name: "tags", widget: "string"}
+          - {label: "Permalink", name: "permalink", widget: "string"}
+          - {label: "Nav title", name: "navtitle", widget: "string"}
+          - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
+          - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
+          - {label: "Social Image", name: "socialImage", widget: "image", required: false}
+          - {label: "Body", name: "body", widget: "markdown"}
     
-  # Our speakers
+  # Speakers
   - name: "speaker"
     label: "Speaker"
     folder: "speaker"
     create: true
     slug: "{{slug}}" 
     fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "speaker-single"}
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Body", name: "body", widget: "markdown" }
   
-  # Our schedule
+  # Schedule
   - name: "schedule"
     label: "Schedule"
     folder: "schedule"
     create: true
     slug: "{{slug}}" 
     fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "schedule-single"}
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Body", name: "body", widget: "markdown" }
   
-  # Our blog posts
+  # Blog posts
   - name: "blog"
     label: "Post"
     folder: "posts"
     create: true
     slug: "{{slug}}" 
     fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Body", name: "body", widget: "markdown" }
-  
-  # # Our pages e.g. About
-  # - name: "pages"
-  #   label: "Page"
-  #   folder: "pages"
-  #   create: false
-  #   slug: "{{slug}}"
-  #   fields:
-  #     - { label: "Title", name: "title", widget: "string" }
-  #     - { label: "Publish Date", name: "date", widget: "datetime" }
-  #     - { label: "Permalink", name: "permalink", widget: "string" }
-  #     - { label: "Navigation Title", name: "navtitle", widget: "string" }
-  #     - { label: "Tags", name: "tags", widget: "hidden", default: "nav" }
-  #     - { label: "Body", name: "body", widget: "markdown" }
