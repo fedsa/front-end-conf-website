@@ -21,13 +21,9 @@ collections:
         fields:
           - {label: "Site Name", name: "name", widget: "string"}
           - {label: "Site Url", name: "url", widget: "string"}
-      
-      - label: "CTA button"
-        name: "cta-button"
-        delete: false
-        fields:
           - {label: "Button Text", name: "button-text", widget: "string"}
           - {label: "Button Url", name: "button-url", widget: "string"}
+          
 
   - name: "pages"
     label: "Pages"
