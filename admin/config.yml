@@ -21,8 +21,8 @@ collections:
         fields:
           - {label: "Site Name", name: "name", widget: "string"}
           - {label: "Site Url", name: "url", widget: "string"}
-          - {label: "Button Text", name: "button-text", widget: "string"}
-          - {label: "Button Url", name: "button-url", widget: "string"}
+          - {label: "Button Text", name: "buttontext", widget: "string"}
+          - {label: "Button Url", name: "buttonurl", widget: "string"}
           
 
   - name: "pages"
