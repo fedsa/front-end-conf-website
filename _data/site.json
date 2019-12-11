@@ -1,6 +1,6 @@
 {
   "name": "feconf2020",
   "url": "https://feconf2020.netlify.com",
-  "button-text": "Default",
-  "button-url": "https://feconf2020.netlify.com"
+  "buttontext": "Default",
+  "buttonurl": "https://feconf2020.netlify.com"
 }
