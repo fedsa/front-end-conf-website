@@ -237,6 +237,10 @@ button {
 
 /* Utilities */
 
+.is-hidden {
+	display: none;
+}
+
 .is-visually-hidden {
   border: 0 !important;
   clip: rect(1px, 1px, 1px, 1px) !important;
