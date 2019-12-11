@@ -5,5 +5,9 @@ section: home
 
 {{ layoutContent | safe }}
 
-{# {% set postslist = collections.posts %}
-{% include "components/postslist.njk" %} #}
+{% set postslist = collections.speaker %}
+{% include "components/postslist.njk" %}
+
+
+{% set postslist = collections.posts %}
+{% include "components/postslist.njk" %}
