@@ -17,7 +17,7 @@ collections:
       - label: "Site Data"
         name: "site_data"
         delete: false
-        file: "_data/metadata.json"
+        file: "_data/site.json"
         fields:
           - {label: "Site Name", name: "name", widget: "string"}
           - {label: "Site Url", name: "url", widget: "string"}
