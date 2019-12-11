@@ -13,8 +13,8 @@
 				</a>
 			</h1>
 			{% include "components/nav.njk" %}
-			<a href="#" class="btn--primary">
-				Get your tickets
+			<a href="{{site.cta-button.button-url}}" class="btn--primary">
+				{{site.cta-button.button-text | markdownify }}
 			</a>
 		</header>
 
