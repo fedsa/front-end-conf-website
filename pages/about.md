@@ -1,18 +1,17 @@
 ---
 title: About front-end conf 2020
 date: 2019-12-02T00:00:00.000Z
+tags: nav
 permalink: /about/index.html
 navtitle: About
-tags:
-  - nav
 ---
 Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
 
 Add a few line breaks in here to test:-
-Capitalize  
-on  
-low  
-hanging  
+Capitalize\
+on\
+low\
+hanging\
 fruit  
 
 ## Our services
