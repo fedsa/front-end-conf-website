@@ -145,7 +145,7 @@ header nav ul :first-child {
 
 header nav li {
 	display: inline-block;
-	margin-right: 3rem;
+	margin-right: 2rem;
 }
 
 header nav li:last-child {
@@ -160,6 +160,12 @@ header nav li a[data-current="current item"] {
 	font-weight: 700;
 	text-decoration: underline;
 	color: var(--accent);
+}
+
+@media screen and (max-width: 62.5em) {
+	header nav {
+		display: none;;
+	}
 }
 
 /* Posts List */
@@ -283,7 +289,7 @@ button {
 	white-space: nowrap;
 }
 
-.coming-soon {
+/* .coming-soon {
 	align-items: center;
 	display: flex;
 	justify-content: center;
@@ -293,21 +299,43 @@ button {
 
 .coming-soon .svg-logo {
 	width: 600px;
-}
+} */
 
 /* layout */
+.grid {
+	display: grid;
+}
+
+.three--column--grid {
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));;
+	grid-gap: 2rem;
+}
 
 .flex {
 	display: flex;
 }
 
-.flex--center {
+.flex--center-all {
 	align-items: center;
   justify-content: center;
 }
 
+.flex--center-hor {
+	align-items: center;
+	text-align: center;
+}
+
+.flex--center-vert {
+	justify-content: center;
+}
+
+
 .flex--column {
 	flex-direction: column;
+}
+
+.divider {
+	width: 100%;
 }
 
 /* Hero stuff */

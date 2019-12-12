@@ -2,13 +2,26 @@
 
 /* Home page */
 
-.hero--home {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+/* Grid articles */
+
+.icon--text {
+  padding-block-start: 3rem;
+  padding-inline-start: 2rem;
+  padding-inline-end: 1.5rem;
 }
 
-.main-title {
-  font-size: 4rem;
+.icon--text-icon {
+  display: grid;
+}
+
+.icon--main, .icon--bg {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 2;
+  grid-row-end: 2;
+  transition: transform 250ms ease-in-out;
+}
+
+.icon--text:hover .icon--bg {
+   transform: scale(2);
 }
