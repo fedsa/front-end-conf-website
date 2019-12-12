@@ -166,7 +166,7 @@ header nav li a[data-current="current item"] {
 	color: var(--accent);
 }
 
-@media screen and (max-width: 62.5em) {
+@media screen and (max-width: 45em) {
 	header nav {
 		display: none;;
 	}
