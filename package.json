@@ -25,6 +25,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.9.0",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
+    "eleventy-plugin-pwa": "^1.0.8",
     "luxon": "^1.21.1",
     "markdown-it": "^10.0.0",
     "markdown-it-anchor": "^5.2.5"
