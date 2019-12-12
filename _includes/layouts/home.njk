@@ -3,11 +3,11 @@ layout: layouts/base.njk
 section: home
 ---
 
-{{ layoutContent | safe }}
+{% include "components/home-components/hero.njk" %}
 
-{% set postslist = collections.speaker %}
+{# {% set postslist = collections.speaker %}
 {% include "components/postslist.njk" %}
 
 
 {% set postslist = collections.posts %}
-{% include "components/postslist.njk" %}
+{% include "components/postslist.njk" %} #}

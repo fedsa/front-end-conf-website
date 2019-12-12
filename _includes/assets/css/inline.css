@@ -5,6 +5,7 @@
       url('../static/fonts/Quicksand-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -14,6 +15,7 @@
       url('../static/fonts/Quicksand-Bold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -23,12 +25,14 @@
       url('../static/fonts/opensans-regular-webfont.woff') format('woff');
   font-weight: 500;
   font-style: normal;
+	font-display: swap;
 }
 
 :root {
 	--blue:#00384c;
 	--base: #3e4a6d;
 	--accent: #ec005c;
+	--yellow: #eeb601;
 	--background: #008ecc;
 	--alt-font-family: "Quicksand", "Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 	--base-font-family: "Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -41,9 +45,10 @@
 html,
 body {
 	color: var(--base);
-	padding: 0;
-	margin: 0;
 	font-family: var(--base-font-family);
+	line-height: 1.7;
+	margin: 0;
+	padding: 0;
 }
 
 body {
@@ -53,7 +58,15 @@ body {
 }
 
 main {
-	max-width: 37.5em;
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 auto;
+}
+
+.content--container {
+	margin: 2rem auto 0;
+	max-width: 1040px;
+	width: 100%;
 }
 
 p,
@@ -78,12 +91,6 @@ footer {
 
 main {
 	padding: 0 2em;
-	/* padding: var(--side-margin); */
-}
-
-main :first-child,
-main > article :first-child {
-	margin-top: 0;
 }
 
 pre {
@@ -288,3 +295,50 @@ button {
 	width: 600px;
 }
 
+/* layout */
+
+.flex {
+	display: flex;
+}
+
+.flex--center {
+	align-items: center;
+  justify-content: center;
+}
+
+.flex--column {
+	flex-direction: column;
+}
+
+/* Hero stuff */
+
+
+.hero--home {
+	padding: 6rem 0;
+}
+
+.main--title {
+  font-size: 4rem;
+	line-height: 1.2;
+	margin-block-start: 1rem;
+	margin-block-end: 0;
+	text-align: center;
+}
+
+.main--title-date {
+	color: var(--accent);
+	display: block;
+	font-size: 3rem;
+	line-height: 1;
+	margin: 0;
+	margin-block-end: 0.5rem;
+}
+
+.main--title-date::before {
+	color: var(--yellow);
+	content: "."
+}
+
+.place--date > span, .org--links > a {
+	margin-inline-start: 1rem;
+}

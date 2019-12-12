@@ -1,0 +1,14 @@
+/* ==============Non critical CSS =============== */
+
+/* Home page */
+
+.hero--home {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-title {
+  font-size: 4rem;
+}
