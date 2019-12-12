@@ -83,6 +83,10 @@ a[href]:not(:hover) {
 	text-decoration: none;
 }
 
+h1, h2, h3 {
+	font-family: var(--alt-font-family);
+}
+
 header,
 main,
 footer {
@@ -342,7 +346,7 @@ button {
 
 
 .hero--home {
-	padding: 6rem 0;
+	padding: 4rem 0 6rem;
 }
 
 .main--title {
@@ -358,8 +362,7 @@ button {
 	display: block;
 	font-size: 3rem;
 	line-height: 1;
-	margin: 0;
-	margin-block-end: 0.5rem;
+	margin-block-start: 0;
 }
 
 .main--title-date::before {
