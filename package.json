@@ -5,7 +5,7 @@
   "scripts": {
     "build": "npx eleventy",
     "watch": "npx eleventy --watch",
-    "serve": "npx eleventy --serve",
+    "serve": "gulp build & gulp watch & npx eleventy --serve --watch",
     "debug": "DEBUG=* npx eleventy"
   },
   "repository": {
@@ -26,6 +26,11 @@
     "@11ty/eleventy": "^0.9.0",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "eleventy-plugin-pwa": "^1.0.8",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.1",
+    "gulp-watch": "^5.0.1",
     "luxon": "^1.21.1",
     "markdown-it": "^10.0.0",
     "markdown-it-anchor": "^5.2.5"

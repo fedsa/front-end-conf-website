@@ -1,0 +1,441 @@
+/// Breakpoints
+
+// @example scss - Usage
+// @include breakpoint('40em');
+
+@mixin breakpoint($size) {
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin breakpoint-max($size) {
+  @media only screen and (max-width: $size) {
+    @content;
+  }
+}
+
+//// Flex stuffs
+
+@mixin flex-direction($values) {
+	-webkit-flex-direction: $values;
+	flex-direction: $values;
+}
+
+@mixin flex-flow($values) {
+	-webkit-flex-flow: $values;
+	flex-flow: $values;
+}
+
+@mixin align-items($values) {
+	-webkit-align-items: $values;
+	align-items: $values;
+}
+
+@mixin justify-content($values) {
+	-webkit-justify-content: $values;
+	justify-content: $values;
+}
+
+@mixin flex($values) {
+	-webkit-flex: $values;
+	flex: $values;
+}
+
+@mixin display-flex() {
+	display: -webkit-flex;
+	display: flex;
+}
+
+@mixin display-inline-flex() {
+	display: -webkit-inline-flex;
+	display: inline-flex;
+}
+
+// micro clearfix hack
+
+%clearfix {
+  zoom: 1;
+  &::before, &::after { content: ""; display: table; }
+  &::after { clear: both; }
+}
+
+// Float labels
+
+@mixin float-label-container {
+  display: block;
+  position: relative;
+}
+
+@mixin float-label {
+  label, > span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: text;
+    font-size: 75%;
+    opacity: 1;
+    transition: all .2s;
+    @content;
+  }
+}
+
+@mixin float-label-input {
+  &::placeholder {
+    opacity: 1;
+    transition: all .2s;
+  }
+  &:placeholder-shown:not(:focus)::placeholder {
+      opacity: 0;
+  }
+}
+
+@mixin float-label-scaled {
+  &:placeholder-shown:not(:focus) + * {
+      font-size: 120%;
+      opacity: .5;
+      @content;
+  }
+}
+
+
+//Transitions
+
+@mixin transition($transition-property, $transition-time, $method) {
+  -webkit-transition: $transition-property $transition-time $method;
+     -moz-transition: $transition-property $transition-time $method;
+      -ms-transition: $transition-property $transition-time $method;
+       -o-transition: $transition-property $transition-time $method;
+          transition: $transition-property $transition-time $method;
+}
+
+@mixin transitionfixed {
+  -webkit-transition: all 250ms ease-in-out;
+     -moz-transition: all 250ms ease-in-out;
+      -ms-transition: all 250ms ease-in-out;
+       -o-transition: all 250ms ease-in-out;
+          transition: all 250ms ease-in-out;
+}
+
+
+@mixin transitionlin {
+  -webkit-transition: all 250ms linear;
+     -moz-transition: all 250ms linear;
+      -ms-transition: all 250ms linear;
+       -o-transition: all 250ms linear;
+          transition: all 250ms linear;
+}
+
+
+// REM fallbacks
+//Set up a variable for calculation
+
+$doc-font-size: 16;
+
+// the font-size mixin
+
+@mixin font-size($size) {
+  font-size: 0rem + $size / $doc-font-size;
+}
+
+
+// Mixin for rem conversion. Remove pixel line if not required (IE 9+)
+
+@mixin rem($property , $values , $important : false) {
+
+  $font-size  : 16px;// set your default font size
+  $px-values  : ();
+  $rem-values : ();
+
+  @each $value in $values{
+
+    @if index((0, 0px), $value) or $value == 0px {
+
+      $px-values  : join($px-values, 0);
+      $rem-values : join($rem-values, 0);
+
+    } @else if type-of($value) == number and not unitless($value) and (unit($value) == px) {
+
+      $new-rem-value : $value / $font-size;
+      $px-values     : join($px-values, round($value));
+      $rem-values    : join($rem-values, #{$new-rem-value}rem);
+
+    } @else if type-of($value) == number and not unitless($value) and (unit($value) == "%") {
+
+      $px-values  : join($px-values, #{$value});
+      $rem-values : join($rem-values, #{$value});
+
+    } @else if $value == auto {
+
+      $px-values  : join($px-values, auto);
+      $rem-values : join($rem-values, auto);
+
+    } @else {
+
+      $px-values  : join($px-values, round($value * $font-size));
+      $rem-values : join($rem-values, #{$value}rem);
+
+    }
+
+  }
+
+  @if $important != false {
+
+    $rem-values : $rem-values!important;
+
+    }
+
+    #{$property}: $rem-values;
+}
+
+// // how to use
+// .selector{
+//     @include rem(height , 40px);
+//     // optional !important parameter (try not to use)
+//     @include rem(height , 40px, true);
+// }
+
+// // output
+// .selector{
+//     height : 40px;
+//     // with !important declaration
+//     height : 40px!important;
+// }
+
+//css triangles
+@mixin triangle($direction, $size, $color){
+
+    height   : 0;
+    width    : 0;
+    display  : block;
+
+    @if ($direction == 'up'){
+        border-bottom : $size solid $color;
+        border-left   : 1/2*$size solid transparent;
+        border-right  : 1/2*$size solid transparent;
+    }
+    @else if ($direction == 'down'){
+        border-top   : $size solid $color;
+        border-left  : 1/2*$size solid transparent;
+        border-right : 1/2*$size solid transparent;
+    }
+    @else if ($direction == 'left'){
+        border-top    : 1/2*$size solid transparent;
+        border-bottom : 1/2*$size solid transparent;
+        border-right  : $size solid $color;
+    }
+    @else if ($direction == 'right'){
+        border-top    : 1/2*$size solid transparent;
+        border-bottom : 1/2*$size solid transparent;
+        border-left   : $size solid $color;
+    }
+
+}
+
+// half circles
+@mixin circle($direction, $color){
+
+  content: "";
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 1;
+
+  background-color: $color;
+
+  @if ($direction == 'up'){
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 60px;
+    height: 30px;
+  }
+  @else if ($direction == 'down'){
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  @else if ($direction == 'left'){
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+    left: -30px;
+    top: 60px;
+    width: 30px;
+    height: 60px;
+  }
+  @else if ($direction == 'right'){;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    right: -30px;
+    top: 60px;
+    width: 30px;
+    height: 60px;
+  }
+
+}
+
+
+
+// // how to use
+// .selector{
+//     @include circle(up, 10px, #000);
+// }
+
+// // output
+// .selector{
+//    height        : 0;
+//    width         : 0;
+//    display       : block;
+//    border-bottom : 10px solid #000;
+//    border-left   : 5px solid transparent;
+//    border-right  : 5px solid transparent;
+// }
+
+
+%contentBulletList {
+  list-style: none;
+
+  & > li {
+    &:before {
+      color: #00B2A9;
+      content: "\25CF";
+      font-size: 8px;
+      margin: 0 10px 0 -21px;
+    }
+  }
+}
+
+// Centering
+
+@mixin centerBlock {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//Responsive video
+
+@mixin maintain-ratio($ratio: 1 1) {
+  @if length($ratio) < 2 or length($ratio) > 2 {
+  @warn "$ratio must be a list with two values.";
+  }
+
+  $width: 100%;
+  $height: percentage(nth($ratio, 2) / nth($ratio, 1));
+  width: $width;
+  height: 0;
+  padding-bottom: $height;
+  position: relative;
+}
+
+//Horizontal rule
+
+@mixin hr {
+  border: 0;
+  height: 1px;
+  display: block;
+  margin: 40px 0 30px;
+}
+
+@mixin bottom-shadow {
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.2);
+}
+
+@mixin top-shadow {
+  box-shadow: 0 8px -6px 6px rgba(0, 0, 0, 1) inset;
+}
+
+//Flexbox
+@mixin flexAlign($pack, $align){
+  display: -ms-flexbox;
+  -ms-flex-pack: center;
+  -ms-flex-align: center;
+
+  display: -webkit-box;
+  -webkit-box-pack: $pack;
+  -webkit-box-align: $align;
+
+  display: -moz-box;
+  -moz-box-pack: $pack;
+  -moz-box-align: $align;
+
+  display: box;
+  box-pack: $pack;
+  box-align: $align;
+}
+
+%greyscale {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-backface-visibility: hidden;  /* Fix for transition flickering */
+}
+
+%tabular-numbers {
+  font-variant-numeric: tabular-nums;
+  -moz-font-feature-settings: "tnum";
+  -ms-font-feature-settings: "tnum";
+  -webkit-font-feature-settings: "tnum";
+  font-feature-settings: "tnum";
+}
+
+@mixin css-arrow($arrow-position, $arrow-color, $arrow-size) {
+    &:after {
+      position: absolute;
+      border: solid transparent;
+      content: " ";
+      top: auto;
+      left: auto;
+      height: 0;
+      width: 0;
+      margin: 0;
+      border-color: transparent;
+      border-width: $arrow-size;
+      pointer-events: none;
+    }
+    @if $arrow-position == "top" {
+      &:after {
+        bottom: 100%;
+        border-bottom-color: $arrow-color;
+        margin-left: (-$arrow-size);
+        left: 50%;
+      }
+    }
+    @if $arrow-position == "right" {
+      &:after {
+        left: 100%;
+        border-left-color: $arrow-color;
+        margin-top: (-$arrow-size);
+        top: 50%;
+      }
+    }
+    @if $arrow-position == "bottom" {
+      &:after {
+        top: 100%;
+        border-top-color: $arrow-color;
+        margin-left: (-$arrow-size);
+        left: 50%;
+      }
+    }
+    @if $arrow-position == "left" {
+      &:after {
+        right: 100%;
+        border-right-color: $arrow-color;
+        margin-top: (-$arrow-size);
+        top: 50%;
+      }
+    }
+  }
+
+  //Usage @include css-arrow(top, red, 0.5rem);
+
+%transition {
+  -moz-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}

@@ -1,0 +1,59 @@
+/*
+   Color and sizing variables
+   ========================================================================== */
+
+// Variables
+
+// Fonts
+
+$base-font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+// Base colour
+
+$base-color: hsl(0°, 0%, 20%);
+
+//Primary colours
+
+$sea-pink: darken(hsl(350°, 77%, 76%), 10%);
+$deep-blush: hsl(353°, 73%, 60%);
+$upsdell-red: hsl(350°, 76%, 40%);
+$shadow-green: hsl(166°, 35%, 68%);
+$elf-green: hsl(167°, 60%, 34%);
+
+// Errors, warnings, completions
+
+$success: #00B2A9;
+$warning: #F2A900;
+$alert: #D22630;
+
+//Greys
+
+$off-white: hsl(0°, 0%, 96%);
+$very-light-grey: hsl(0°, 0%, 88%);
+$light-grey: hsl(0°, 0%, 76%);
+
+
+//Links
+$link-color: darken($elf-green, 10%);
+$link-hover-color: darken($elf-green, 10%);
+
+// Buttons
+
+$button-color: $elf-green;
+$button-hover-color: darken($elf-green, 10%);
+
+// Border etc
+
+$border-color: $very-light-grey;
+
+// inputs
+
+$input-color: #999999;
+
+// Type colours
+
+$heading-color: $base-color;
+
+// Sizing
+
+$line-height: 1.6;

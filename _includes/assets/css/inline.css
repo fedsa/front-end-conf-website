@@ -268,43 +268,6 @@ button {
   width: 1px !important;
 }
 
-/* Buttons */
-
-.btn--primary {
-	align-items: center;
-	background-color: var(--accent);
-	border: 2px solid transparent;
-	box-shadow: 0 0 0 1px rgba(255,255,255,.1), 0 2px 4px 0 rgba(14,30,37,.12);
-	color: #fff;
-	display: inline-flex;
-	font-family: var(--alt-font-family);
-	font-size: .875rem;
-	font-weight: 700;
-	justify-content: center;
-	letter-spacing: 1px;
-	padding: .75rem 1.5rem;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	transform: translateY(0);
-	transition: transform .15s ease;
-	user-select: none;
-	vertical-align: middle;
-	white-space: nowrap;
-}
-
-/* .coming-soon {
-	align-items: center;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	height: 80vh;
-}
-
-.coming-soon .svg-logo {
-	width: 600px;
-} */
-
 /* layout */
 .grid {
 	display: grid;

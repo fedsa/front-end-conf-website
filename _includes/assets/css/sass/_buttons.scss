@@ -1,0 +1,64 @@
+// Button styles, including links styled as buttons
+
+button,
+input[type="submit"],
+input[type="button"] {
+  &:focus {
+    outline: 1px dotted $light-grey;
+  }
+}
+
+.btn--primary {
+	align-items: center;
+	background-color: var(--accent);
+	border: 2px solid transparent;
+	box-shadow: 0 0 0 1px rgba(255,255,255,.1), 0 2px 4px 0 rgba(14,30,37,.12);
+	color: #fff;
+	display: inline-flex;
+	font-family: var(--alt-font-family);
+	font-size: .875rem;
+	font-weight: 700;
+	justify-content: center;
+	letter-spacing: 1px;
+	padding: .75rem 1.5rem;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	transform: translateY(0);
+	transition: transform .15s ease;
+	user-select: none;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.btn--primary:hover {
+	box-shadow: 0 10px 43px rgba(0, 0, 0, 0.1);
+}
+// unstyled
+
+.unstyled-button {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+
+  &:hover, &:focus {
+    background-color: transparent;
+    outline: none;
+  }
+
+}
+
+.text-button {
+  background: transparent;
+  border: none;
+  color: $link-color;
+  font-weight: 400;
+  padding: 0;
+  text-decoration: underline;
+
+  &:hover, &:focus {
+    background: transparent;
+    color: $link-hover-color;
+  }
+
+}
