@@ -11,7 +11,15 @@
 }
 
 .icon--text-icon {
+  justify-items: center;
+  align-items: center;
   display: grid;
+
+  svg {
+    width: 80px;
+    height: 80px;
+  }
+
 }
 
 .icon--main, .icon--bg {
@@ -19,9 +27,4 @@
   grid-row-start: 1;
   grid-column-end: 2;
   grid-row-end: 2;
-  transition: transform 250ms ease-in-out;
-}
-
-.icon--text:hover .icon--bg {
-   transform: scale(2);
 }
