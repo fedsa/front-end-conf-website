@@ -1,14 +1,18 @@
 {% for post in schedulelist %}
-	<article href="{{ post.url | url }}" class="flex flex--column flex--center-hor schedule--card">
-		<figure class="grid speaker--image speaker--image-schedule">
-			<img src="{{ post.data.image }}" alt="{{ post.data.title }}" class="speaker--schedule">
-		</figure>
+	<article href="{{ post.url | url }}" class="flex flex--column flex--center-vert schedule--card">
 		<h3 class="speaker--name">
+      <a href="{{ post.url | url }}">
 				{% if post.data.title %}
 					{{ post.data.title }}
 				{% else %}
 					Untitled
 				{% endif %}
+      </a>
 		</h3>
+    {% if post.data.summary %}
+		<p>
+		  {{ post.data.summary }}
+		</p>
+		{% endif %}
 	</article>
 {% endfor %}
