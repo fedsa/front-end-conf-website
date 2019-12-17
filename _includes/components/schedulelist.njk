@@ -1,0 +1,14 @@
+{% for post in schedulelist %}
+	<article href="{{ post.url | url }}" class="flex flex--column flex--center-hor schedule--card">
+		<figure class="grid speaker--image speaker--image-schedule">
+			<img src="{{ post.data.image }}" alt="{{ post.data.title }}" class="speaker--schedule">
+		</figure>
+		<h3 class="speaker--name">
+				{% if post.data.title %}
+					{{ post.data.title }}
+				{% else %}
+					Untitled
+				{% endif %}
+		</h3>
+	</article>
+{% endfor %}

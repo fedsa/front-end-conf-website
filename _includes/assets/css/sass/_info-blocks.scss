@@ -63,9 +63,17 @@
   }
 }
 
+// Speakers
+
+.content--wrapper-speakers {
+  margin-block-start: 4rem;
+  background-color: #f8f9fa;
+}
+
 .speaker--card {
   &:hover {
     .speaker--cropped {
+      filter: initial;
       border: 10px solid var(--accent);
     }
   }
@@ -85,7 +93,12 @@
 
 .speaker--cropped {
   border-radius: 50%;
+  filter: grayscale(1);
+  object-fit: contain;
+  opacity: 0.7;
+  transform: translateY(4px);
   transition: all 150ms ease;
+  width: 184px;
 }
 
 .speaker--title {

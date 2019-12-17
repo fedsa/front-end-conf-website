@@ -1,8 +1,8 @@
 ---
-title: Another speaker
-date: 2019-12-17T00:00:00.000Z
+title: Henri Helvetica
+date: 2019-12-16T00:00:00.000Z
 summary: Why contemplating our mortality can be a powerful catalyst for change
-image: /static/images/speakers/jeremy@2x.jpg
+image: /static/images/speakers/henri-helvetica.jpg
 tags:
   - speaker
   - tech

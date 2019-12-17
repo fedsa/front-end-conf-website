@@ -82,14 +82,13 @@ h1, h2, h3 {
 }
 
 header,
-main,
 footer {
 	padding: 1em;
 }
 
-main {
+/* main {
 	padding: 0 2em;
-}
+} */
 
 pre {
 	font-size: 14px;
@@ -275,6 +274,7 @@ button {
 }
 
 .divider {
+	margin: 4rem 0;
 	width: 100%;
 }
 
