@@ -19,3 +19,7 @@ Or in debug mode:
 ```
 DEBUG=* npx eleventy
 ``
+
+``gulp build & gulp watch`` 
+
+``npx eleventy --serve --watch``

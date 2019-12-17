@@ -1,0 +1,15 @@
+{% for post in speakerlist | reverse %}
+	<a href="{{ post.url | url }}" class="flex flex--column flex--center-hor speaker--card">
+		<figure class="grid speaker--image">
+			<img src="/static/images/icons/speaker-bg.svg" alt="{{ post.data.title }}" class="speaker--bg">
+			<img src="{{ post.data.image }}" alt="{{ post.data.title }}" class="speaker--cropped">
+		</figure>
+		<h3 class="speaker--name">
+				{% if post.data.title %}
+					{{ post.data.title }}
+				{% else %}
+					Untitled
+				{% endif %}
+		</h3>
+	</a>
+{% endfor %}

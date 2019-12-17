@@ -19,7 +19,7 @@ gulp.task('css', function () {
   Watch folders for changes
 */
 gulp.task("watch", function() {
-  gulp.watch("./_includes/assets/css/sass/main.scss", gulp.parallel("css"));
+  gulp.watch("./_includes/assets/css/sass/*.scss", gulp.parallel("css"));
 });
 
 
