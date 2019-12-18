@@ -313,3 +313,13 @@ button {
 .place--date > span, .org--links > a {
 	margin-inline-start: 1rem;
 }
+
+/* To be removed */
+
+.coming-soon {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 80vh;
+}
