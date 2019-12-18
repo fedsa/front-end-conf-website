@@ -1,14 +1,12 @@
 ---
-title: Rachel Andrew
+title: It's a talk
+speaker: An Other
 date: 2019-12-09T00:00:00.000Z
 summary: Why contemplating our mortality can be a powerful catalyst for change
 image: /static/images/speakers/rachel@2x.jpg
+session: 12pm
 tags:
   - speaker
-  - tech
-  - environment
-  - politics
-  - sport
 ---
 Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
 

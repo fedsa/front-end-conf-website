@@ -108,27 +108,13 @@ collections:
     
   # Speakers
   - name: "speaker"
-    label: "Speaker"
+    label: "Speaker and schedule"
     folder: "speaker"
     create: true
     slug: "{{slug}}" 
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "speaker-single"}
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Summary", name: "summary", widget: "text" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
-      - { label: "Body", name: "body", widget: "markdown" }
-  
-  # Schedule
-  - name: "schedule"
-    label: "Schedule"
-    folder: "schedule"
-    create: true
-    slug: "{{slug}}" 
-    fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "schedule-single"}
-      - { label: "Title", name: "title", widget: "string" }
+      - { label: "speaker", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }

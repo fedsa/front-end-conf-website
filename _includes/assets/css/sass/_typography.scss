@@ -1,5 +1,14 @@
 // Type styles
 
+.page--title {
+  font-size: 3.5rem;
+
+  &::before {
+    content: "// ";
+  }
+
+}
+
 .section--header {
-  font-size: 3rem;;
+  font-size: 3rem;
 }

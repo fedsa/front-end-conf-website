@@ -3,9 +3,12 @@ layout: layouts/base.njk
 section: schedule
 permalink: /schedule/index.html
 ---
-<h1>{{ title }}</h1>
 
-{{ layoutContent | safe }}
+<section class="content--container">
+  <h1 class="page--title">{{ title }}</h1>
 
-{% set schedulelist = collections.schedule %}
-{% include "components/schedulelist.njk" %}
+  {{ layoutContent | safe }}
+
+  {% set speakerlist = collections.speaker %}
+  {% include "components/schedulelist.njk" %}
+</section>

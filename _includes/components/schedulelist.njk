@@ -1,4 +1,4 @@
-{% for post in schedulelist %}
+{% for post in speakerlist %}
 	<article href="{{ post.url | url }}" class="flex flex--column flex--center-vert schedule--card">
 		<h3 class="speaker--name">
       <a href="{{ post.url | url }}">
@@ -6,9 +6,21 @@
 					{{ post.data.title }}
 				{% else %}
 					Untitled
-				{% endif %}
+				{% endif %}	
       </a>
 		</h3>
+		 {% if post.data.session %}
+		<p>
+		  {{ post.data.session }}
+		</p>
+		<p>
+			{% if post.data.speaker %}
+				{{ post.data.speaker }}
+			{% else %}
+				Untitled
+			{% endif %}
+		</p>
+		{% endif %}
     {% if post.data.summary %}
 		<p>
 		  {{ post.data.summary }}
