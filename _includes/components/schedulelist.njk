@@ -1,30 +1,31 @@
-{% for post in speakerlist %}
-	<article href="{{ post.url | url }}" class="flex flex--column flex--center-vert schedule--card">
-		<h3 class="speaker--name">
-      <a href="{{ post.url | url }}">
-				{% if post.data.title %}
-					{{ post.data.title }}
-				{% else %}
-					Untitled
-				{% endif %}	
-      </a>
-		</h3>
-		 {% if post.data.session %}
+<div class="grid schedule--layout">
+{% for post in speakerlist | sort(attribute="date") %}
+	<div class="schedule--meta {{ post.data.class }}">
 		<p>
 		  {{ post.data.session }}
 		</p>
-		<p>
+		<figure class="schedule--figure">
+			<img src="{{ post.data.image }}" alt="{{ post.data.title }}" class="schedule--image">
+		</figure>
+	</div>
+	<article href="{{ post.url | url }}" class="flex flex--column flex--center-vert schedule--card {{ post.data.class }}--card">
+		<h3 class="schedule--layout-title">
+      	<a href="{{ post.url | url }}">
+					{% if post.data.title %}
+						{{ post.data.title }}
+					{% endif %}	
+      	</a>
+			</h3>
 			{% if post.data.speaker %}
+			<p class="schedule--layout-name">
 				{{ post.data.speaker }}
-			{% else %}
-				Untitled
+			</p>
 			{% endif %}
-		</p>
-		{% endif %}
-    {% if post.data.summary %}
-		<p>
-		  {{ post.data.summary }}
-		</p>
-		{% endif %}
+    	{% if post.data.summary %}
+			<p>
+		  	{{ post.data.summary }}
+			</p>
+			{% endif %}
 	</article>
 {% endfor %}
+</div>

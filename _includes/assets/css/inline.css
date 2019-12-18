@@ -278,6 +278,10 @@ button {
 	width: 100%;
 }
 
+.textual--content {
+	max-width: 75ch;
+}
+
 /* Hero stuff */
 
 

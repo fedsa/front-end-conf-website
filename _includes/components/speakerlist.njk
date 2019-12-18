@@ -1,5 +1,5 @@
 {% for post in speakerlist %}
-	<a href="{{ post.url | url }}" class="flex flex--column flex--center-hor speaker--card">
+	<a href="{{ post.url | url }}" class="flex flex--column flex--center-hor speaker--card {{ post.data.class }}">
 		<figure class="grid speaker--image">
 			<img src="/static/images/icons/speaker-bg.svg" alt="{{ post.data.title }}" class="speaker--bg">
 			<img src="{{ post.data.image }}" alt="{{ post.data.title }}" class="speaker--cropped">

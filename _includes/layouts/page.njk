@@ -4,6 +4,7 @@ section: page
 ---
 <section class="content--container">
   <h1 class="page--title">{{ title }}</h1>
-
-  {{ layoutContent | safe }}
+  <article class="textual--content">
+    {{ layoutContent | safe }}
+  </article>
 </section>

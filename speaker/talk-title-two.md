@@ -1,10 +1,12 @@
 ---
 title: Talk title two
-speaker: John Smith
-date: 2019-12-09T00:00:00.000Z
+speaker: Mary Jones
+date: 2019-10-17T00:00:00.000Z
 summary: Why contemplating our mortality can be a powerful catalyst for change
-image: /static/images/speakers/jeremy@2x.jpg
-session: Friday 10am
+image: /static/images/speakers/chidinma-kalu.jpg
+session: 9:30am
+class: 
+	- session
 tags:
   - speaker
 ---

@@ -1,10 +1,10 @@
 ---
-title: A talk with a long title to test how that goes it's long I said it's long blah blah blah
-speaker: Some One
-date: 2019-12-16T00:00:00.000Z
+title: Talk title
+speaker: John Smith
+date: 2019-12-09T00:00:00.000Z
 summary: Why contemplating our mortality can be a powerful catalyst for change
-image: /static/images/speakers/henri-helvetica.jpg
-session: 2pm
+image: /static/images/speakers/jeremy@2x.jpg
+session: 12:30pm
 tags:
   - speaker
 ---

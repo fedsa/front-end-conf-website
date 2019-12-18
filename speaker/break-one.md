@@ -1,10 +1,12 @@
 ---
-title: Talk title
-speaker: Mary Jones
-date: 2019-12-17T00:00:00.000Z
-summary: Why contemplating our mortality can be a powerful catalyst for change
-image: /static/images/speakers/chidinma-kalu.jpg
-session: Friday 10am
+title: Break one
+speaker: 
+date: 2019-12-09T00:00:00.000Z
+summary: Tea
+image: /static/images/speakers/person@2x.png
+session: 11:30am
+class:
+  - interim
 tags:
   - speaker
 ---

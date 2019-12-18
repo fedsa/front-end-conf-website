@@ -3,9 +3,16 @@ layout: layouts/base.njk
 section: speaker
 permalink: /speakers/index.html
 ---
-<h1>{{ title }}</h1>
 
-{{ layoutContent | safe }}
+<section class="content--container">
+  <h1 class="page--title">{{ title }}</h1>
 
-{% set speakerlist = collections.speaker %}
-{% include "components/speakerlist.njk" %}
+  <article class="textual--content">
+    {{ layoutContent | safe }}
+  </article>
+
+  <div class="grid three--column--grid">
+  {% set speakerlist = collections.speaker %}
+  {% include "components/speakerlist.njk" %}
+  </div>
+</section>

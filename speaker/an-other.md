@@ -4,7 +4,7 @@ speaker: An Other
 date: 2019-12-09T00:00:00.000Z
 summary: Why contemplating our mortality can be a powerful catalyst for change
 image: /static/images/speakers/rachel@2x.jpg
-session: 12pm
+session: 10:30am
 tags:
   - speaker
 ---
