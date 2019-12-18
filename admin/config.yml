@@ -20,8 +20,8 @@ collections:
         delete: false
         file: "_data/site.json"
         fields:
-          - {label: "Site Name", name: "name", widget: "string"}
-          - {label: "Site Url", name: "url", widget: "string"}
+          - { label: "Site Name", name: "name", widget: "string"}
+          - { label: "Site Url", name: "url", widget: "string"}
   # Header
   - label: "Header"
     name: "header"
@@ -31,8 +31,8 @@ collections:
         delete: false
         file: "_data/header.json"
         fields:
-          - {label: "Button Text", name: "buttontext", widget: "string"}
-          - {label: "Button Url", name: "buttonurl", widget: "string"}
+          - { label: "Button Text", name: "buttontext", widget: "string"}
+          - { label: "Button Url", name: "buttonurl", widget: "string"}
           
 
   - name: "pages"
@@ -46,11 +46,11 @@ collections:
         slug: "{{slug}}"
         create: false
         fields:
-          - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
-          - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
-          - {label: "Social Image", name: "socialImage", widget: "image", required: false}
+          - { label: "Layout", name: "layout", widget: "hidden", default: "home"}
+          - { label: "Title", name: "title", widget: "string"}
+          - { label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
+          - { label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
+          - { label: "Social Image", name: "socialImage", widget: "image", required: false}
       # About page      
       - name: "about"
         label: "About page"
@@ -59,16 +59,16 @@ collections:
         slug: "{{slug}}"
         create: false
         fields:
-          - {label: "Layout", name: "layout", widget: "hidden", default: "about"}
-          - {label: "Title", name: "title", widget: "string"}
+          - { label: "Layout", name: "layout", widget: "hidden", default: "about"}
+          - { label: "Title", name: "title", widget: "string"}
           - { label: "Publish Date", name: "date", widget: "datetime" }
-          - {label: "Tags", name: "tags", widget: "string"}
-          - {label: "Permalink", name: "permalink", widget: "string"}
-          - {label: "Nav title", name: "navtitle", widget: "string"}
-          - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
-          - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
-          - {label: "Social Image", name: "socialImage", widget: "image", required: false}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - { label: "Tags", name: "tags", widget: "string"}
+          - { label: "Permalink", name: "permalink", widget: "string"}
+          - { label: "Nav title", name: "navtitle", widget: "string"}
+          - { label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
+          - { label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
+          - { label: "Social Image", name: "socialImage", widget: "image", required: false}
+          - { label: "Body", name: "body", widget: "markdown"}
       # Speakers page      
       - name: "speakers"
         label: "Speakers page"
@@ -77,16 +77,16 @@ collections:
         slug: "{{slug}}"
         create: false
         fields:
-          - {label: "Layout", name: "layout", widget: "hidden", default: "speaker"}
-          - {label: "Title", name: "title", widget: "string"}
+          - { label: "Layout", name: "layout", widget: "hidden", default: "speaker"}
+          - { label: "Title", name: "title", widget: "string"}
           - { label: "Publish Date", name: "date", widget: "datetime" }
-          - {label: "Tags", name: "tags", widget: "string"}
-          - {label: "Permalink", name: "permalink", widget: "string"}
-          - {label: "Nav title", name: "navtitle", widget: "string"}
-          - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
-          - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
-          - {label: "Social Image", name: "socialImage", widget: "image", required: false}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - { label: "Tags", name: "tags", widget: "string"}
+          - { label: "Permalink", name: "permalink", widget: "string"}
+          - { label: "Nav title", name: "navtitle", widget: "string"}
+          - { label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
+          - { label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
+          - { label: "Social Image", name: "socialImage", widget: "image", required: false}
+          - { label: "Body", name: "body", widget: "markdown"}
       # Schedule page      
       - name: "schedule"
         label: "Schedule page"
@@ -95,16 +95,16 @@ collections:
         slug: "{{slug}}"
         create: false
         fields:
-          - {label: "Layout", name: "layout", widget: "hidden", default: "schedule"}
-          - {label: "Title", name: "title", widget: "string"}
+          - { label: "Layout", name: "layout", widget: "hidden", default: "schedule"}
+          - { label: "Title", name: "title", widget: "string"}
           - { label: "Publish Date", name: "date", widget: "datetime" }
-          - {label: "Tags", name: "tags", widget: "string"}
-          - {label: "Permalink", name: "permalink", widget: "string"}
-          - {label: "Nav title", name: "navtitle", widget: "string"}
-          - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
-          - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
-          - {label: "Social Image", name: "socialImage", widget: "image", required: false}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - { label: "Tags", name: "tags", widget: "string"}
+          - { label: "Permalink", name: "permalink", widget: "string"}
+          - { label: "Nav title", name: "navtitle", widget: "string"}
+          - { label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
+          - { label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
+          - { label: "Social Image", name: "socialImage", widget: "image", required: false}
+          - { label: "Body", name: "body", widget: "markdown"}
     
   # Speakers
   - name: "speaker"
@@ -113,12 +113,14 @@ collections:
     create: true
     slug: "{{slug}}" 
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "speaker-single"}
+      - { label: "Layout", name: "layout", widget: "hidden", default: "speaker-single"}
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Speaker name", name: "speaker", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Image", name: "image", widget: "image"}
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+      - { label: "Class", name: "class", widget: "select", options: ["interim", "main"] }
       - { label: "Body", name: "body", widget: "markdown" }
   
   # Blog posts
@@ -128,7 +130,7 @@ collections:
     create: true
     slug: "{{slug}}" 
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Summary", name: "summary", widget: "text" }
