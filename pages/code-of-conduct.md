@@ -8,7 +8,7 @@ navtitle: Code of conduct
 
 All attendees, speakers, sponsors and volunteers at our conference are required to agree with the following code of conduct. Organisers will enforce this code throughout the event. We are expecting cooperation from all participants to help ensure a safe environment for everybody.
 
-## Reporting
+<!-- ## Reporting
 
 If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible. Conference staff can be identified by t-shirts. Harassment and other Code of Conduct violations reduce the value of our event for everyone. We want you to be happy at our event. People like you make our event a better place. You can make a report either personally or anonymously.
 
@@ -44,4 +44,4 @@ Our team will be happy to help you contact hotel/venue security, local law enfor
 Important contact numbers
 
     Police: Sonnenallee 107, 12045 Berlin, phone: 110
-    Medical Emergency: Call 112.
+    Medical Emergency: Call 112. -->
