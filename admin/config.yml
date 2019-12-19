@@ -124,8 +124,8 @@ collections:
       - { label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
       - { label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
       - { label: "Social Image", name: "socialImage", widget: "image", required: false}
-      - { label: "Body", name: "body", widget: "markdown"}
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Speaker bio", name: "bio", widget: "markdown" }
+      - { label: "Talk outline", name: "body", widget: "markdown" }
   
   # Blog posts
   - name: "blog"
