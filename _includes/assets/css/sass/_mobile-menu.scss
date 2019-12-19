@@ -17,8 +17,8 @@
 
 .menu-icon {
   cursor: pointer;
-  display: inline-block;
-  padding: 28px 20px;
+  display: flex;
+  padding: 1rem;
   position: relative;
   user-select: none;
 }
@@ -87,7 +87,7 @@
 
 /* 48em = 768px */
 
-@media (min-width: 48em) {
+@media (min-width: 62.5em) {
   .main--nav ul {
     display: flex;
     flex-direction: row;

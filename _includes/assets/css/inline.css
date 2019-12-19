@@ -51,6 +51,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	flex: 1 0 auto;
+	padding: 0 2rem;
 }
 
 .content--container {
@@ -279,6 +280,7 @@ button {
 }
 
 .textual--content {
+	padding-block-start: 6rem;
 	max-width: 75ch;
 }
 
