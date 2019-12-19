@@ -10,7 +10,7 @@ section: speakers
 	    <img src="{{ image }}" alt="{{ title }}" class="speaker--shape">
 	  </figure>
     <h2 class="speaker--title">{{ speaker }}</h2>
-    <p class="speaker--bio">{{ bio }}</p>
+    <p class="speaker--bio">{{ bio | markdownify }}</p>
   </div>
 
   {% include "components/divider.njk" %}
