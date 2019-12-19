@@ -174,19 +174,6 @@ header > h1 {
   transform: scale(1);
 }
 
-/* Posts List */
-article {
-	margin-bottom: 1em;
-	padding-bottom: 1em;
-	border-bottom: 1px solid #eee;
-	border-bottom: 1px solid white;
-}
-
-main > section > article > * {
-	margin-top: 0;
-	margin-bottom: .5em;
-}
-
 /* Contact Form */
 form {
   display: grid;

@@ -15,117 +15,6 @@
   }
 }
 
-//// Flex stuffs
-
-@mixin flex-direction($values) {
-	-webkit-flex-direction: $values;
-	flex-direction: $values;
-}
-
-@mixin flex-flow($values) {
-	-webkit-flex-flow: $values;
-	flex-flow: $values;
-}
-
-@mixin align-items($values) {
-	-webkit-align-items: $values;
-	align-items: $values;
-}
-
-@mixin justify-content($values) {
-	-webkit-justify-content: $values;
-	justify-content: $values;
-}
-
-@mixin flex($values) {
-	-webkit-flex: $values;
-	flex: $values;
-}
-
-@mixin display-flex() {
-	display: -webkit-flex;
-	display: flex;
-}
-
-@mixin display-inline-flex() {
-	display: -webkit-inline-flex;
-	display: inline-flex;
-}
-
-// micro clearfix hack
-
-%clearfix {
-  zoom: 1;
-  &::before, &::after { content: ""; display: table; }
-  &::after { clear: both; }
-}
-
-// Float labels
-
-@mixin float-label-container {
-  display: block;
-  position: relative;
-}
-
-@mixin float-label {
-  label, > span {
-    position: absolute;
-    left: 0;
-    top: 0;
-    cursor: text;
-    font-size: 75%;
-    opacity: 1;
-    transition: all .2s;
-    @content;
-  }
-}
-
-@mixin float-label-input {
-  &::placeholder {
-    opacity: 1;
-    transition: all .2s;
-  }
-  &:placeholder-shown:not(:focus)::placeholder {
-      opacity: 0;
-  }
-}
-
-@mixin float-label-scaled {
-  &:placeholder-shown:not(:focus) + * {
-      font-size: 120%;
-      opacity: .5;
-      @content;
-  }
-}
-
-
-//Transitions
-
-@mixin transition($transition-property, $transition-time, $method) {
-  -webkit-transition: $transition-property $transition-time $method;
-     -moz-transition: $transition-property $transition-time $method;
-      -ms-transition: $transition-property $transition-time $method;
-       -o-transition: $transition-property $transition-time $method;
-          transition: $transition-property $transition-time $method;
-}
-
-@mixin transitionfixed {
-  -webkit-transition: all 250ms ease-in-out;
-     -moz-transition: all 250ms ease-in-out;
-      -ms-transition: all 250ms ease-in-out;
-       -o-transition: all 250ms ease-in-out;
-          transition: all 250ms ease-in-out;
-}
-
-
-@mixin transitionlin {
-  -webkit-transition: all 250ms linear;
-     -moz-transition: all 250ms linear;
-      -ms-transition: all 250ms linear;
-       -o-transition: all 250ms linear;
-          transition: all 250ms linear;
-}
-
 
 // REM fallbacks
 //Set up a variable for calculation
@@ -205,30 +94,30 @@ $doc-font-size: 16;
 //css triangles
 @mixin triangle($direction, $size, $color){
 
-    height   : 0;
-    width    : 0;
-    display  : block;
+  height   : 0;
+  width    : 0;
+  display  : block;
 
-    @if ($direction == 'up'){
-        border-bottom : $size solid $color;
-        border-left   : 1/2*$size solid transparent;
-        border-right  : 1/2*$size solid transparent;
-    }
-    @else if ($direction == 'down'){
-        border-top   : $size solid $color;
-        border-left  : 1/2*$size solid transparent;
-        border-right : 1/2*$size solid transparent;
-    }
-    @else if ($direction == 'left'){
-        border-top    : 1/2*$size solid transparent;
-        border-bottom : 1/2*$size solid transparent;
-        border-right  : $size solid $color;
-    }
-    @else if ($direction == 'right'){
-        border-top    : 1/2*$size solid transparent;
-        border-bottom : 1/2*$size solid transparent;
-        border-left   : $size solid $color;
-    }
+  @if ($direction == 'up'){
+    border-bottom : $size solid $color;
+    border-left   : 1/2*$size solid transparent;
+    border-right  : 1/2*$size solid transparent;
+  }
+  @else if ($direction == 'down'){
+    border-top   : $size solid $color;
+    border-left  : 1/2*$size solid transparent;
+    border-right : 1/2*$size solid transparent;
+  }
+  @else if ($direction == 'left'){
+    border-top    : 1/2*$size solid transparent;
+    border-bottom : 1/2*$size solid transparent;
+    border-right  : $size solid $color;
+  }
+  @else if ($direction == 'right'){
+    border-top    : 1/2*$size solid transparent;
+    border-bottom : 1/2*$size solid transparent;
+    border-left   : $size solid $color;
+  }
 
 }
 
@@ -347,95 +236,4 @@ $doc-font-size: 16;
 
 @mixin top-shadow {
   box-shadow: 0 8px -6px 6px rgba(0, 0, 0, 1) inset;
-}
-
-//Flexbox
-@mixin flexAlign($pack, $align){
-  display: -ms-flexbox;
-  -ms-flex-pack: center;
-  -ms-flex-align: center;
-
-  display: -webkit-box;
-  -webkit-box-pack: $pack;
-  -webkit-box-align: $align;
-
-  display: -moz-box;
-  -moz-box-pack: $pack;
-  -moz-box-align: $align;
-
-  display: box;
-  box-pack: $pack;
-  box-align: $align;
-}
-
-%greyscale {
-  filter: gray; /* IE6-9 */
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  filter: grayscale(100%);
-  -webkit-backface-visibility: hidden;  /* Fix for transition flickering */
-}
-
-%tabular-numbers {
-  font-variant-numeric: tabular-nums;
-  -moz-font-feature-settings: "tnum";
-  -ms-font-feature-settings: "tnum";
-  -webkit-font-feature-settings: "tnum";
-  font-feature-settings: "tnum";
-}
-
-@mixin css-arrow($arrow-position, $arrow-color, $arrow-size) {
-    &:after {
-      position: absolute;
-      border: solid transparent;
-      content: " ";
-      top: auto;
-      left: auto;
-      height: 0;
-      width: 0;
-      margin: 0;
-      border-color: transparent;
-      border-width: $arrow-size;
-      pointer-events: none;
-    }
-    @if $arrow-position == "top" {
-      &:after {
-        bottom: 100%;
-        border-bottom-color: $arrow-color;
-        margin-left: (-$arrow-size);
-        left: 50%;
-      }
-    }
-    @if $arrow-position == "right" {
-      &:after {
-        left: 100%;
-        border-left-color: $arrow-color;
-        margin-top: (-$arrow-size);
-        top: 50%;
-      }
-    }
-    @if $arrow-position == "bottom" {
-      &:after {
-        top: 100%;
-        border-top-color: $arrow-color;
-        margin-left: (-$arrow-size);
-        left: 50%;
-      }
-    }
-    @if $arrow-position == "left" {
-      &:after {
-        right: 100%;
-        border-right-color: $arrow-color;
-        margin-top: (-$arrow-size);
-        top: 50%;
-      }
-    }
-  }
-
-  //Usage @include css-arrow(top, red, 0.5rem);
-
-%transition {
-  -moz-transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
 }
