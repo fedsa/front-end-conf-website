@@ -2,7 +2,7 @@
   "name": "Frontend 2020",
   "short_name": "FE2020",
   "lang": "en-GB",
-  "start_url": "https://frontend.org.za",
+  "start_url": "https://uat--frontend-conf.netlify.com/",
   "display": "standalone",
   "theme_color": "#ffffff",
   "icons": [
