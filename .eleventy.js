@@ -7,7 +7,7 @@ const pluginPWA = require("eleventy-plugin-pwa");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
-  eleventyConfig.addLayoutAlias("speaker", "layouts/post.njk");
+  eleventyConfig.addLayoutAlias("speaker", "layouts/speaker.njk");
 
   // Date formatting (human readable)
   eleventyConfig.addFilter("readableDate", dateObj => {
@@ -64,6 +64,13 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  // only content in the `schedule/` directory
+  eleventyConfig.addCollection("schedule", function (collection) {
+    return collection.getAllSorted().filter(function (item) {
+      return item.inputPath.match(/^\.\/schedule\//) !== null;
+    });
+  });
+
 
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("favicon.ico");
@@ -74,6 +81,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("service-worker.js");
   eleventyConfig.addPassthroughCopy("feed.xml");
   eleventyConfig.addPassthroughCopy("netlify.toml");
+  eleventyConfig.addPassthroughCopy("_headers");
 
   // RSS
   
