@@ -74,6 +74,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("service-worker.js");
   eleventyConfig.addPassthroughCopy("feed.xml");
   eleventyConfig.addPassthroughCopy("netlify.toml");
+  eleventyConfig.addPassthroughCopy("_headers");
 
   // RSS
   

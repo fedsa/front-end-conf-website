@@ -1,2 +1,2 @@
 /*
-Content-Security-Policy: default-src 'self'; object-src 'none'; img-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self' https://d33wubrfki0l68.cloudfront.net; manifest-src 'self'; connect-src 'self'; worker-src 'self'
+Content-Security-Policy: default-src 'self'; object-src 'none'; img-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://identity.netlify.com/v1/netlify-identity-widget.js; font-src 'self' https://d33wubrfki0l68.cloudfront.net; manifest-src 'self'; connect-src 'self'; worker-src 'self'
