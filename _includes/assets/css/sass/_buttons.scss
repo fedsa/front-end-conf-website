@@ -4,7 +4,7 @@ button,
 input[type="submit"],
 input[type="button"] {
   &:focus {
-    outline: 1px dotted $light-grey;
+    outline: 1px dotted grey;
   }
 }
 
@@ -19,22 +19,22 @@ input[type="button"] {
 	font-size: .875rem;
 	font-weight: 700;
 	justify-content: center;
-	letter-spacing: 1px;
+	letter-spacing: 0.1em;
 	padding: .75rem 1.5rem;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
 	transform: translateY(0);
-	transition: transform .15s ease;
+	transition: box-shadow 250ms cubic-bezier(0.47, 0, 0.74, 0.71);
 	user-select: none;
-	vertical-align: middle;
 	white-space: nowrap;
 }
 
 .btn--primary:hover {
-	box-shadow: 0 10px 43px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 10px 43px rgba(0, 0, 0, 0.15);
 }
-// unstyled
+
+// un-styled
 
 .unstyled-button {
   background-color: transparent;

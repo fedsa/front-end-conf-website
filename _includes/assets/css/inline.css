@@ -144,12 +144,15 @@ header > h1 {
 }
 
 .main--nav li {
+	display: flex;
+	justify-content: center;
 	margin: 0 1rem;
 }
 
 .main--nav a {
 	font-size: 0.875em;
 	font-weight: 700;
+	letter-spacing: 0.04em;
 	text-decoration: none;
   text-transform: uppercase;
   transition: all 150ms ease-in-out;

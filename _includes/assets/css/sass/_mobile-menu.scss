@@ -9,13 +9,13 @@
 .main--nav li {
   margin: 1rem 0;
 
-  @include breakpoint(48em) {
+  @include breakpoint(62.5em) {
     margin: 0 1rem;
   }
 
 }
 
-.menu-icon {
+.menu--icon {
   cursor: pointer;
   display: flex;
   padding: 1rem;
@@ -23,7 +23,7 @@
   user-select: none;
 }
 
-.menu-icon .navicon {
+.menu--icon .nav--icon {
   background: #333;
   display: block;
   height: 2px;
@@ -32,8 +32,8 @@
   width: 18px;
 }
 
-.menu-icon .navicon:before,
-.menu-icon .navicon:after {
+.menu--icon .nav--icon:before,
+.menu--icon .nav--icon:after {
   background: #333;
   content: '';
   display: block;
@@ -41,13 +41,13 @@
   position: absolute;
   transition: all .2s ease-out;
   width: 100%;
-}
+} 
 
-.menu-icon .navicon:before {
+.menu--icon .nav--icon:before {
   top: 5px;
 }
 
-.menu-icon .navicon:after {
+.menu--icon .nav--icon:after {
   top: -5px;
 }
 
@@ -68,31 +68,29 @@
   text-align: center;
 }
 
-.menu-btn:checked ~ .menu-icon .navicon {
+.menu-btn:checked ~ .menu--icon .nav--icon {
   background: transparent;
 }
 
-.menu-btn:checked ~ .menu-icon .navicon:before {
+.menu-btn:checked ~ .menu--icon .nav--icon:before {
   transform: rotate(-45deg);
 }
 
-.menu-btn:checked ~ .menu-icon .navicon:after {
+.menu-btn:checked ~ .menu--icon .nav--icon:after {
   transform: rotate(45deg);
 }
 
-.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+.menu-btn:checked ~ .menu--icon:not(.steps) .nav--icon:before,
+.menu-btn:checked ~ .menu--icon:not(.steps) .nav--icon:after {
   top: 0;
 }
-
-/* 48em = 768px */
 
 @media (min-width: 62.5em) {
   .main--nav ul {
     display: flex;
     flex-direction: row;
   }
-  .menu-icon {
+  .menu--icon {
     display: none;
   }
 }
