@@ -51,13 +51,13 @@ main {
 	display: flex;
 	flex-direction: column;
 	flex: 1 0 auto;
-	padding: 0 2rem;
 }
 
 .content--container {
 	margin: 2rem auto 0;
-	max-width: 1040px;
+	max-width: calc(1040px + 4rem);
 	width: 100%;
+	padding: 0 2rem;
 }
 
 img {
@@ -270,7 +270,7 @@ button {
 }
 
 .textual--content {
-	padding-block-start: 6rem;
+	padding-block-start: 6vh;
 	max-width: 75ch;
 }
 

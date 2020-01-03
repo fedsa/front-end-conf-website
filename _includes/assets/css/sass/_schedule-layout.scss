@@ -98,9 +98,13 @@
   margin-inline-start: 0;
   margin-inline-end: 0;
   margin-block-end: 0;
-  float: left;
-  shape-outside: circle(45%);
-  transform: translateX(-2rem);
+
+  @include breakpoint(42.188em) {
+    shape-outside: circle(45%);
+    transform: translateX(-2rem);
+    float: left;
+  }
+
 }
 
 .speaker--shape {
