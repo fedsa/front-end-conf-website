@@ -10,3 +10,51 @@ html[data-current="post"] {
     }
   }
 }
+
+.posts--container {
+  display: grid;
+  grid-row-gap: 3rem;
+}
+
+.post--block {
+  grid-template-columns: 150px fit-content(70ch);
+  grid-column-gap: 4rem;
+}
+
+.post--block-image {
+  background-color: var(--accent);
+  block-size: 150px;
+  inline-size: 150px;
+  margin: 0;
+
+  img {
+    opacity: 0.7;
+  }
+
+}
+
+.post---block-title {
+  line-height: 1.3;
+  margin: 0;
+
+  a {
+    text-decoration: none;
+  }
+
+}
+
+.post--block-time {
+  color: var(--background);
+  font-weight: 700;
+}
+
+.post--block-link {
+  border-bottom: 2px solid var(--accent);
+  text-decoration: none;
+}
+
+.post--block-tag {
+  background-color: var(--yellow);
+  padding-inline-start: 0.5rem;
+  padding-inline-end: 0.5rem;
+}

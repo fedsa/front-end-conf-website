@@ -22,7 +22,7 @@
 	--blue:#00384c;
 	--base: #3e4a6d;
 	--accent: #d60057;
-	--yellow: #eeb601;
+	--yellow: #e6d300;
 	--background: #008ecc;
 	--alt-font-family: "Quicksand", "Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	--base-font-family: "Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -73,6 +73,10 @@ code {
 
 a {
 	color: var(--blue);
+}
+
+a:hover {
+	color: var(--accent);
 }
 
 a[href]:not(:hover) {

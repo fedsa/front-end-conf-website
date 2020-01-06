@@ -15,11 +15,11 @@ renderData:
 ---
 
 <section class="content--container">
-  <h1>Tagged “{{ tag }}”</h1>
-
+  <h1>Tagged <span class="post--block-tag">“{{ tag }}”</span></h1>
+  <div class="posts--container">
   {% set postslist = collections[ tag ] %}
   {% include "components/postslist.njk" %}
-
+  </div>
   <nav>
     <a href="{{ '/blog/' | url }}">← Blog index</a>
   </nav>

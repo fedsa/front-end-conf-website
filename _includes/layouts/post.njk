@@ -18,12 +18,15 @@ section: post
 
     {% if tags %}
       <p>
-      {% for tag in tags %}
-        {%- if tag != "post" -%}
-          {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-          <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
-        {%- endif -%}
-      {% endfor %}
+      <small>
+        Tagged with:
+        {% for tag in tags %}
+          {%- if tag != "post" -%}
+            {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+            <a href="{{ tagUrl | url }}" rel="tag" class="post--block-tag">{{ tag }}</a>
+          {%- endif -%}
+        {% endfor %}
+      </small>
       </p>
     {% endif %}
 

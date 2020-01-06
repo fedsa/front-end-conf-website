@@ -6,10 +6,9 @@ permalink: /blog/index.html
 
 <section class="content--container">
   <h1 class="page--title">{{ title }}</h1>
-  <article class="">
     {{ layoutContent | safe }}
-
-    {% set postslist = collections.posts %}
-    {% include "components/postslist.njk" %}
-  </article>
+    <div class="posts--container">
+      {% set postslist = collections.posts %}
+      {% include "components/postslist.njk" %}
+    </div>
 </section>
