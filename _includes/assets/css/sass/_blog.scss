@@ -1,0 +1,12 @@
+// All blog related styles
+
+html[data-current="post"] {
+  a[href*="blog"] {
+    color: var(--accent);
+
+    &::after {
+      display: block;
+      transform: scale(1);
+    }
+  }
+}

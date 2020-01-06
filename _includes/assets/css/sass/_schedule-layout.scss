@@ -1,4 +1,4 @@
-  // Schedule layout
+// Schedule and speaker styling
 
 .schedule--layout {
   grid-template-columns: [first] max-content .4rem [last] 1fr;
@@ -119,7 +119,3 @@
 .speaker--title {
   font-size: 2em;
 }
-
-// .speaker--bio {
-
-// }
