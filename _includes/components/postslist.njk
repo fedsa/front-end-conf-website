@@ -1,10 +1,10 @@
 {% for post in postslist | reverse %}
 	<article class="post--block grid">
 		<figure class="post--block-image">
-			{% if post.data.img %}
+			{% if post.data.image %}
 			<img src="{{ post.data.image }}" alt="{{ post.data.title }}">
 			{% else %}
-			<img src="/static/images/posts/default.png" alt="{{ post.data.title }}">
+			<img src="/static/images/favicon/android-chrome-512x512.png" alt="{{ post.data.title }}" class="post--block-default">
 			{% endif %}
 		</figure>
 		<div class="post--bloc-entry">

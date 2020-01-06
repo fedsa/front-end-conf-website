@@ -22,15 +22,19 @@ html[data-current="post"] {
 }
 
 .post--block-image {
-  background-color: var(--accent);
+  background-color: var(--base);
   block-size: 150px;
   inline-size: 150px;
   margin: 0;
 
   img {
-    opacity: 0.7;
+    display: block;
   }
 
+}
+
+.post--block-default {
+  border: 2px solid var(--yellow);
 }
 
 .post---block-title {
