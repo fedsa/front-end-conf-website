@@ -17,15 +17,25 @@ html[data-current="post"] {
 }
 
 .post--block {
-  grid-template-columns: 150px fit-content(70ch);
-  grid-column-gap: 4rem;
+  display: block;
+
+  @include breakpoint(47.938em) {
+    display: grid;
+    grid-template-columns: 150px fit-content(70ch);
+    grid-column-gap: 4rem;
+  }
 }
 
 .post--block-image {
   background-color: var(--base);
-  block-size: 150px;
-  inline-size: 150px;
   margin: 0;
+  margin-block-end: 2rem;
+  width: 100%;
+
+  @include breakpoint(47.938em) {
+    block-size: 150px;
+    inline-size: 150px;
+  }
 
   img {
     display: block;
