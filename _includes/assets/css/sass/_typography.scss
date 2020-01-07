@@ -1,5 +1,17 @@
 // Type styles
 
+::-webkit-input-placeholder {
+	color: var(--blue);
+}
+
+::-moz-placeholder {
+	color: var(--blue);
+}
+
+:-ms-input-placeholder {
+	color: var(--blue);
+}
+
 p {
   font-size: 1.125em;
 }

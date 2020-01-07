@@ -11,6 +11,7 @@ form label {
   margin-block-end: 0.875rem;
 }
 
+.input,
 input,
 textarea {
 	font-size: 16px;
@@ -19,6 +20,9 @@ textarea {
   padding: 1rem;
   transition: all 250ms ease-in-out;
   width: 90%;
+
+  -webkit-appearance: none;
+	-webkit-border-radius: 0;
 
   &:focus {
     box-shadow: 0 0 0 1px var(--blue);
