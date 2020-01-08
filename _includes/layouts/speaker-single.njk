@@ -18,17 +18,6 @@ section: speakers
   <article class="textual--content no-top-padding">
     <h2 class="talk-title">// The talk</h2>
     {{ layoutContent | safe }}
-  {# 
-    {% if tags %}
-      <p>
-      {% for tag in tags %}
-        {%- if tag != "speaker-single" -%}
-          {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-          <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
-        {%- endif -%}
-      {% endfor %}
-      </p>
-    {% endif %} #}
   </article>
 
   <nav>
