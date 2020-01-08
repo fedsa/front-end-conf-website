@@ -1,5 +1,10 @@
 // Type styles
 
+::selection {
+  background:var(--accent);
+  color: white;
+}
+
 ::-webkit-input-placeholder {
 	color: var(--blue);
 }
