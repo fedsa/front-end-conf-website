@@ -91,7 +91,11 @@
 
 .speaker--info {
   overflow: hidden;
-  padding-inline-start: 2rem;
+
+  @include breakpoint(42.188em) {
+    padding-inline-start: 2rem;
+  }
+
 }
 
 .speaker--image-single {
