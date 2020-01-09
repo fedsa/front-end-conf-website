@@ -7,6 +7,7 @@ const pluginPWA = require("eleventy-plugin-pwa");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function(eleventyConfig) {
+  eleventyConfig.setQuietMode(true);
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
   eleventyConfig.addLayoutAlias("speaker", "layouts/speaker.njk");
 
