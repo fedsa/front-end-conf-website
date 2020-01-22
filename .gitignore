@@ -2,3 +2,5 @@ _site/
 node_modules/
 package-lock.json
 workbox-*
+.netlify/
+.vscode/

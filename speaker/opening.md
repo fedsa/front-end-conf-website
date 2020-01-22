@@ -7,7 +7,5 @@ image: /static/images/speakers/person@2x.png
 session: 8am
 class: 
 	- interim
-tags:
-  - speaker
 ---
 
