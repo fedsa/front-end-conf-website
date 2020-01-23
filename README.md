@@ -23,3 +23,8 @@ DEBUG=* npx eleventy
 ``gulp build & gulp watch`` 
 
 ``npx eleventy --serve --watch``
+
+## Roadmap
+
+* Highlight active event in schedule based on time
+* Send push notifications 5 - 10 minutes before event start
