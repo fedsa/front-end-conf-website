@@ -1,9 +1,9 @@
 ---
 layout: layouts/home.njk
 title: Home
-metaTitle: Frontend 2020 Home Page
-metaDesc: A descripion here please
-socialImage: /static/images/feconf-logo.png
+metaTitle: Frontend 2021 Home Page
+metaDesc: Coming soon!
+socialImage: /static/images/feconf-logo.svg
 ---
 
 # We are here
