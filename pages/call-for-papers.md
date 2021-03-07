@@ -3,7 +3,7 @@ title: Call for papers
 tags:
   - nav
 navtitle: Call for papers
-date: 2021-03-07
+date: 2021-03-06
 permalink: /call-for-papers/index.html
 ---
 

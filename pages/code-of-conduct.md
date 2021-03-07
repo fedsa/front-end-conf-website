@@ -1,6 +1,6 @@
 ---
 title: Code of conduct
-date: 2019-12-17T00:00:00.000Z
+date: 2021-03-07
 tags: nav
 permalink: /code-of-conduct/index.html
 navtitle: Code of conduct
