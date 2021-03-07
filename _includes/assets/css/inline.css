@@ -105,6 +105,9 @@ header {
 	display: flex;
 	justify-content: space-between;
 	padding: 1rem 2rem;
+	max-width: 1440px;
+	margin: 0 auto;
+	width: 80%;
 }
 
 header > h1 {
