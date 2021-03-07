@@ -272,3 +272,8 @@ header > h1 {
 	flex-direction: column;
 	height: 80vh;
 } */
+
+.footer {
+	margin: 0 auto;
+	width: 70ch;
+}
