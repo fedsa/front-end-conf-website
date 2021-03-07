@@ -23,20 +23,20 @@
   },
   "homepage": "https://frontend.org.za/",
   "devDependencies": {
-    "@11ty/eleventy": "^0.9.0",
-    "@11ty/eleventy-plugin-rss": "^1.0.7",
+    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-plugin-rss": "^1.1.0",
     "eleventy-plugin-pwa": "^1.0.8",
-    "gulp": "^4.0.0",
+    "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
-    "gulp-sass": "^4.0.1",
-    "gulp-uglify": "^3.0.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
     "gulp-watch": "^5.0.1",
-    "luxon": "^1.21.1",
-    "markdown-it": "^10.0.0",
-    "markdown-it-anchor": "^5.2.5"
+    "luxon": "^1.26.0",
+    "markdown-it": "^12.0.4",
+    "markdown-it-anchor": "^7.1.0"
   },
   "dependencies": {
-    "clean-css": "^4.2.1",
+    "clean-css": "^5.1.1",
     "html-minifier": "^4.0.0",
     "uglify-es": "^3.3.9"
   }
