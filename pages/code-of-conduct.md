@@ -6,42 +6,82 @@ permalink: /code-of-conduct/index.html
 navtitle: Code of conduct
 ---
 
-All attendees, speakers, sponsors and volunteers at our conference are required to agree with the following code of conduct. Organisers will enforce this code throughout the event. We are expecting cooperation from all participants to help ensure a safe environment for everybody.
 
-<!-- ## Reporting
+FEDSA meetups and conferences are community events for networking in the Front End Developer South Africa community. We value the participation of each member of the community and want all attendees and sponsors to have an enjoyable and fulfilling experience. 
 
-If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible. Conference staff can be identified by t-shirts. Harassment and other Code of Conduct violations reduce the value of our event for everyone. We want you to be happy at our event. People like you make our event a better place. You can make a report either personally or anonymously.
+All attendees and sponsors are expected to show respect and courtesy to other attendees. To make clear what is expected, all attendees and sponsors are required to conform to this Code of Conduct. Organisers will enforce this code throughout events.
 
-### Anonymous report
+## TL;DR
 
-You can make an anonymous report [here](). We, the organisers, can’t follow up an anonymous report with you directly, but we will fully investigate it and take whatever action is necessary to prevent a recurrence.
+- Be respectful of others, including non-members
+- Do not harass others
+- Do not share anyone’s personal information without their permission
+- All content must be "safe for work"
 
-### Personal report
+This is a safe space, let's keep it that way
 
-In case of aggression or violence please call the security immediately!
+## Code of Conduct
 
-### Awareness Team
+"FEDSA" in this document refers to the the Front End Developer South Africa organisation at https://fedsa.org/. "The organisers" refers to the administrators on this organisation, which can be accessed [here](https://www.meetup.com/fedsa-community/members/?op=leaders).
 
-If you need personal support you can always reach out to the Awareness Team directly. Members of the Awareness Team are BIPoC who are hired and trained to provide personal support and help mediate (this does not include security work). They are walking in pairs around the venue and can be identified by blue T-Shirts that read “AWARENESS TEAM” in the front and back. Additionally you can always find two members of the Awareness Team at the registration.
+FEDSA is dedicated to providing a harassment-free experience for everyone. We do not tolerate harassment of participants in any form.
 
-If you would like to report an incident, you can do so via email to awareness@jsconf.eu (Awareness Team). Emails sent to this address are read by the Awareness Team and its Coordination Team which also includes white people (organisers of CSSconf and JSConf EU).
+This code of conduct applies to all FEDSA spaces, including all events (online and in-person), direct messages, and any communication between members. Anyone who violates this code of conduct may be sanctioned or expelled from these spaces at the discretion of the organisers.
 
-Below you will find the phone numbers which you can call during the main conference hours. The phone will be staffed by the Awareness Team only. If you would like to report anonymously only to the Awareness Team please hide your phone number and reach out to one of the following phone numbers:
+Harassment includes:
 
-    +49 152 363 800 02
-    +49 152 363 800 07
+- Offensive comments related to gender, gender identity and expression, sexual orientation, disability, mental illness, neuro(a)typicality, physical appearance, body size, race, or religion
+- Unwelcome comments regarding a person’s lifestyle choices and practices, including those related to food, health, parenting, drugs, and employment.
+- Deliberate misgendering or use of "dead" or rejected names
+- Gratuitous or off-topic sexual images
+- Inappropriate sexual behaviour
+- Unwelcome sexual attention
+- Physical contact and simulated physical contact (e.g., textual descriptions like "hug" or "backrub") without consent or after a request to stop
+- Threats of violence
+- Incitement of violence towards any individual, including encouraging a person to commit suicide or to engage in self-harm
+- Deliberate intimidation
+- Stalking or following
+- Harassing photography or recording, including logging online activity for harassment purposes
+- Sustained disruption of discussion
+- Pattern of inappropriate social contact, such as requesting/assuming inappropriate levels of intimacy with others
+- Continued one-on-one communication after requests to cease
+- Deliberate "outing" of any aspect of a person’s identity without their consent except as necessary to protect vulnerable people from intentional abuse
+- Publication of non-harassing private communication
 
-Organisers/Curators
+## Reporting
 
-You can make a personal report by:
+If you are being harassed by a member of FEDSA, notice that someone else is being harassed, or have any other concerns there are a few methods for reporting. Organisers will respond as soon as they are able. If the person who is harassing you is on the organising team, they will recuse themselves from handling your incident.
 
-    Contacting a TEAM member, identified by TEAM buttons.
-    Emailing us: contact@cssconf.eu
+- DM an [organiser](https://www.meetup.com/fedsa-community/members/?op=leaders)
+- During an online event send a private message to an organiser
+- During an in-person event approach one of the organisers
 
-When taking a personal report, our staff will ensure you are safe and cannot be overheard. They may involve other event staff to ensure your report is managed properly. Once safe, we’ll ask you to tell us about what happened. This can be upsetting, but we’ll handle it as respectfully as possible, and you can bring someone to support you. You won’t be asked to confront anyone and we won’t tell anyone who you are.
+This code of conduct applies to FEDSA spaces, but if you are being harassed by a member of FEDSA outside of our spaces, we still want to know about it. We will take all good-faith reports of harassment by FEDSA members, especially the administrators, seriously. This includes harassment outside our spaces and harassment that took place at any point in time. The abuse team reserves the right to exclude people from FEDSA based on their past behavior, including behavior outside FEDSA spaces and behavior towards people who are not members of the FEDSA community.
 
-Our team will be happy to help you contact hotel/venue security, local law enforcement, local support services, provide escorts, or otherwise assist you to feel safe for the duration of the event. We value your attendance.
-Important contact numbers
+We will respect confidentiality requests for the purpose of protecting victims of abuse. At our discretion, we may publicly name a person about whom we’ve received harassment complaints, or privately warn third parties about them, if we believe that doing so will increase the safety of FEDSA members or the general public. We will not name harassment victims without their affirmative consent.
+Acceptable Content
 
-    Police: Sonnenallee 107, 12045 Berlin, phone: 110
-    Medical Emergency: Call 112. -->
+It is expected that the content made available by members of the community should at all times adhere to the acceptable content policy. This policy is intended to protect the community's image, as well as the image of its members, through restrictions on certain classes of content which may be deemed to be unsuitable in a work or social context.
+
+Links to content are deemed as acceptable as the content within.
+
+Classes of content which we deem to be unsuitable include:
+
+- Pornographic or sexually suggestive material, either in graphic or text form.
+- Depictions of physical or emotional abuse, either in graphic or text form.
+- Persecution of any individual as a result of their race, gender, religion or other physical traits.
+- Material intended to, without basis, harm the reputation of any individual whether a member or not.
+- Unsolicited advertising.
+- Links, or links to pages, for the purpose of monetization of user views and which provide no value to the FEDSA community.
+- Content infringing on copyright laws.
+
+## Consequences
+
+Participants asked to stop any harassing behavior are expected to comply immediately.
+
+If a participant engages in harassing behavior, the organisers may take any action they deem appropriate, up to and including expulsion from all FEDSA spaces and identification of the participant as a harasser to other FEDSA members and/or the general public.
+
+Intentionally evading exclusions, bans, suspensions, restrictions, or otherwise interfering with the admin team's decisions and actions are not permitted.
+Credits
+
+This Code of Conduct is heavily based on the [LGBTQ in Tech Code of Conduct](http://lgbtq.technology/coc.html), the [Offline First Code of Conduct for Slack](http://offlinefirst.org/code-of-conduct/), and the [ZATECH Code of Conduct](https://github.com/zatech/code-of-conduct).
