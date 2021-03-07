@@ -74,7 +74,8 @@
   &:hover {
     .speaker--cropped {
       filter: initial;
-      border: 10px solid var(--accent);
+      border: 8px solid var(--accent);
+      opacity: 1;
     }
   }
 }
@@ -99,8 +100,4 @@
   transform: translateY(4px);
   transition: all 150ms ease;
   width: 184px;
-}
-
-.speaker--title {
-  margin-block-start: 0;
 }

@@ -1,4 +1,3 @@
-
 const gulp      = require("gulp");
 const sass      = require("gulp-sass");
 const uglify    = require('gulp-uglify');
@@ -12,7 +11,7 @@ gulp.task('css', function () {
     .pipe(sass({
       outputStyle: 'compressed'
     })
-      .on('error', sass.logError))
+    .on('error', sass.logError))
     .pipe(gulp.dest('./_includes/assets/css'));
 });
 /*

@@ -5,20 +5,19 @@ section: speakers
 
 <section class="content--container">
   <h1 class="page--title">{{ title }}</h1>
+  <div class="speaker--info">
+    <figure class="speaker--image-single">
+	    <img src="{{ image }}" alt="{{ title }}" class="speaker--shape">
+	  </figure>
+    <h2 class="speaker--title">{{ speaker }}</h2>
+    <p class="speaker--bio">{{ bio | safe }}</p>
+  </div>
 
-   <article class="textual--content">
+  {% include "components/divider.njk" %}
+
+  <article class="textual--content no-top-padding">
+    <h2 class="talk-title">// The talk</h2>
     {{ layoutContent | safe }}
-  {# 
-    {% if tags %}
-      <p>
-      {% for tag in tags %}
-        {%- if tag != "speaker-single" -%}
-          {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-          <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
-        {%- endif -%}
-      {% endfor %}
-      </p>
-    {% endif %} #}
   </article>
 
   <nav>

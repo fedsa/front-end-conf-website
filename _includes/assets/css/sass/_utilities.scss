@@ -28,3 +28,12 @@
   margin-left: 0.5rem;
   transition: all 250ms ease-in-out;
 }
+
+.no-top-margin {
+  margin-block-start: 0;
+}
+
+.no-top-padding {
+  padding-block-start: 0;
+}
+

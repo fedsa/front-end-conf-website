@@ -2,8 +2,6 @@
 layout: layouts/home.njk
 title: Home
 metaTitle: Frontend 2021 Home Page
-metaDesc: Coming soon!
-socialImage: /static/images/feconf-logo.svg
+metaDesc: FEDSA front-end conference 2021
+socialImage: /static/images/feconf-logo.png
 ---
-
-# We are here

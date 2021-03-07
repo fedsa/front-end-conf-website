@@ -3,29 +3,36 @@ layout: layouts/base.njk
 section: post
 ---
 
-<article>
-  <h1>{{ title }}</h1>
-  <p>
-    <small>
-      <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time> by {{ metadata.author.name }}
-    </small>
-  </p>
 
-  {{ layoutContent | safe }}
+<section class="content--container">
+  <article class="textual--content">
 
-  {% if tags %}
+    <h1>{{ title }}</h1>
     <p>
-    {% for tag in tags %}
-      {%- if tag != "post" -%}
-        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-        <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
-      {%- endif -%}
-    {% endfor %}
+      <small>
+        <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time>
+      </small>
     </p>
-  {% endif %}
 
-</article>
+    {{ layoutContent | safe }}
 
-<nav>
-  <a href="{{ '/blog/' | url }}">← Blog index</a>
-</nav>
+    {% if tags %}
+      <p>
+      <small>
+        Tagged with:
+        {% for tag in tags %}
+          {%- if tag != "post" -%}
+            {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+            <a href="{{ tagUrl | url }}" rel="tag" class="post--block-tag">{{ tag }}</a>
+          {%- endif -%}
+        {% endfor %}
+      </small>
+      </p>
+    {% endif %}
+
+  </article>
+
+  <nav>
+    <a href="{{ '/blog/' | url }}">← Blog index</a>
+  </nav>
+</section>

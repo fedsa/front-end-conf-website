@@ -14,11 +14,13 @@ renderData:
   title: "Tagged “{{ tag }}”"
 ---
 
-<h1>Tagged “{{ tag }}”</h1>
-
-{% set postslist = collections[ tag ] %}
-{% include "components/postslist.njk" %}
-
-<nav>
-  <a href="{{ '/blog/' | url }}">← Blog index</a>
-</nav>
+<section class="content--container">
+  <h1>Tagged <span class="post--block-tag">“{{ tag }}”</span></h1>
+  <div class="posts--container">
+  {% set postslist = collections[ tag ] %}
+  {% include "components/postslist.njk" %}
+  </div>
+  <nav>
+    <a href="{{ '/blog/' | url }}">← Blog index</a>
+  </nav>
+</section>

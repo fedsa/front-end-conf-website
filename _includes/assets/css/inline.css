@@ -22,10 +22,16 @@
 	--blue:#00384c;
 	--base: #3e4a6d;
 	--accent: #d60057;
-	--yellow: #eeb601;
+	--yellow: #e6d300;
 	--background: #008ecc;
 	--alt-font-family: "Quicksand", "Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	--base-font-family: "Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+@media screen and (min-width:768px) {
+	:root {
+		font-size: 1.1rem;
+	}
 }
 
 *, *:before, *:after {
@@ -55,11 +61,13 @@ main {
 
 .content--container {
 	margin: 2rem auto 0;
-	max-width: 1040px;
+	max-width: calc(1040px + 4rem);
 	width: 100%;
+	padding: 0 2rem;
 }
 
 img {
+	height: auto;
 	max-width: 100%;
 }
 
@@ -71,6 +79,10 @@ code {
 
 a {
 	color: var(--blue);
+}
+
+a:hover {
+	color: var(--accent);
 }
 
 a[href]:not(:hover) {
@@ -86,27 +98,6 @@ footer {
 	padding: 1em;
 }
 
-/* main {
-	padding: 0 2em;
-} */
-
-pre {
-	font-size: 14px;
-	direction: ltr;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	-moz-tab-size: 2;
-	tab-size: 2;
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-	padding: 1em;
-	margin: .5em 0;
-}
-
 /* Header and Logo */
 
 header {
@@ -120,7 +111,7 @@ header > h1 {
 	margin: .67em 0;
 }
 
-.home-link {
+.home--link {
 	display: flex;
 }
 
@@ -143,12 +134,15 @@ header > h1 {
 }
 
 .main--nav li {
+	display: flex;
+	justify-content: center;
 	margin: 0 1rem;
 }
 
 .main--nav a {
 	font-size: 0.875em;
 	font-weight: 700;
+	letter-spacing: 0.04em;
 	text-decoration: none;
   text-transform: uppercase;
   transition: all 150ms ease-in-out;
@@ -171,57 +165,6 @@ header > h1 {
 .main--nav a[data-current="current item"]::after, .main--nav a:hover::after {
   display: block;
   transform: scale(1);
-}
-
-/* Posts List */
-article {
-	margin-bottom: 1em;
-	padding-bottom: 1em;
-	border-bottom: 1px solid #eee;
-	border-bottom: 1px solid white;
-}
-
-main > section > article > * {
-	margin-top: 0;
-	margin-bottom: .5em;
-}
-
-/* Contact Form */
-form {
-  display: grid;
-	padding: 2em 0;
-}
-
-form label {
-  display: none;
-}
-
-input,
-textarea,
-button {
-  width: 100%;
-  padding: 1em;
-  margin-bottom: 1em;
-	font-size: 1rem;
-	font-family: "Avenir", "Avenir Next", sans-serif;
-}
-
-input,
-textarea {
-	border: 1px solid black;
-}
-
-button {
-	border: 1px solid var(--blue);
-	background-color: var(--blue);
-	color: white;
-	cursor: pointer;
-}
-
-@media screen and (min-width:768px) {
-	:root {
-		font-size: 1.1rem;
-	}
 }
 
 /* Utilities */
@@ -268,7 +211,6 @@ button {
 	justify-content: center;
 }
 
-
 .flex--column {
 	flex-direction: column;
 }
@@ -279,6 +221,7 @@ button {
 }
 
 .textual--content {
+	padding-block-start: 6vh;
 	max-width: 75ch;
 }
 
@@ -290,11 +233,17 @@ button {
 }
 
 .main--title {
-  font-size: 4rem;
+  font-size: 3rem;
 	line-height: 1.2;
 	margin-block-start: 1rem;
 	margin-block-end: 0;
 	text-align: center;
+}
+
+@media screen and (min-width:30.625em) {
+	.main--title {
+		font-size: 4rem;
+	}
 }
 
 .main--title-date {
@@ -316,10 +265,15 @@ button {
 
 /* To be removed */
 
-.coming-soon {
+/* .coming-soon {
 	align-items: center;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	height: 80vh;
+} */
+
+.footer {
+	margin: 0 auto;
+	width: 70ch;
 }

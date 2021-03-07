@@ -12,11 +12,14 @@ npx eleventy
 
 Or build automatically when a template changes:
 ```
-yarn serve
+npx eleventy --serve --watch
 ```
 
-## Roadmap
+Or in debug mode:
+```
+DEBUG=* npx eleventy
+``
 
-* Highlight active event in schedule based on time
-* Send push notifications 5 - 10 minutes before event start
-* Add static content
+``gulp build & gulp watch`` 
+
+``npx eleventy --serve --watch``

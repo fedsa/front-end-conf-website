@@ -1,4 +1,4 @@
-  // Schedule layout
+// Schedule and speaker styling
 
 .schedule--layout {
   grid-template-columns: [first] max-content .4rem [last] 1fr;
@@ -7,13 +7,13 @@
 }
 
 .schedule--meta {
+  align-items: center;
+  display: flex;
   font-size: 0.75em;
   font-weight: 700;
   grid-column: first;
-  position: relative;
-  display: flex;
   justify-content: center;
-  align-items: center;
+  position: relative;
   text-transform: uppercase;
 
   p {
@@ -22,15 +22,15 @@
   }
 
   &::before {
-    position: absolute;
+    background: lighten(grey, 40%);
+    bottom: 0;
     content: "";
     left: 70%;
+    position: absolute;
     top: 0;
-    bottom: 0;
-    width: 1px;
-    background: lighten(grey, 40%);
-    z-index: 1;
     transform: translateX(-1px);
+    width: 1px;
+    z-index: 1;
   }
 
   &:hover {
@@ -56,10 +56,8 @@
 }
 
 .schedule--card {
-  background-color: #f8f9fa;
   grid-column: last;
   padding: 2rem;
-  // box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 9px 2px;
 }
 
 .schedule--layout-title {
@@ -91,3 +89,37 @@
   }
 }
 
+.speaker--info {
+  overflow: hidden;
+
+  @include breakpoint(42.188em) {
+    padding-inline-start: 2rem;
+  }
+
+}
+
+.speaker--image-single {
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  margin-block-end: 0;
+
+  @include breakpoint(42.188em) {
+    shape-outside: circle(45%);
+    transform: translateX(-2rem);
+    float: left;
+  }
+
+}
+
+.speaker--shape {
+  border-radius: 50%;
+  object-fit: contain;
+  transform: translateY(4px);
+  transition: all 150ms ease;
+  width: 250px;
+}
+
+
+.speaker--title {
+  font-size: 2em;
+}

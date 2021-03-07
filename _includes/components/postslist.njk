@@ -1,7 +1,14 @@
-<section>
-	{% for post in postslist | reverse %}
-		<article{% if post.url == url %} data-current="current item"{% endif %}>
-			<h3>
+{% for post in postslist | reverse %}
+	<article class="post--block grid">
+		<figure class="post--block-image">
+			{% if post.data.image %}
+			<img src="{{ post.data.image }}" alt="{{ post.data.title }}">
+			{% else %}
+			<img src="/static/images/favicon/android-chrome-512x512.png" alt="{{ post.data.title }}" class="post--block-default">
+			{% endif %}
+		</figure>
+		<div class="post--block-entry">
+			<h2 class="post---block-title">
 				<a href="{{ post.url | url }}">
 					{% if post.data.title %}
 						{{ post.data.title }}
@@ -9,27 +16,25 @@
 						Untitled
 					{% endif %}
 				</a>
-			</h3>
+			</h2>
+			<time datetime="{{ post.date | machineDate }}" class="post--block-time">
+				{{ post.date | readableDate }}
+			</time>
 			{% if post.data.summary %}
-				<p>
-					{{ post.data.summary }}
-				</p>
+			<p>
+				{{ post.data.summary }}
+			</p>
 			{% endif %}
 			<p>
-				<time datetime="{{ post.date | machineDate }}">
-					<small>{{ post.date | readableDate }} by {{ metadata.author.name }}</small>
-				</time>
+				Read:
+				<a href="{{ post.url | url }}" class="post--block-link">
+					{% if post.data.title %}
+						{{ post.data.title }}
+					{% else %}
+						Untitled
+					{% endif %}
+				</a>
 			</p>
-			{% if post.data.tags %}
-				<p>
-					{% for tag in post.data.tags %}
-		  			{%- if tag != "post" -%}
-		  				{% set tagUrl %}/tags/{{ tag }}/{% endset %}
-		  			<a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
-		  			{%- endif -%}
-					{% endfor %}
-				</p>
-			{% endif %}
-		</article>
-	{% endfor %}
-</section>
+		</div>
+	</article>
+{% endfor %}

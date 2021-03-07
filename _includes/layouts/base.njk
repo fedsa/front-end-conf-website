@@ -7,7 +7,7 @@
 
 		<header>
 			<h1>
-				<a href="{{ '/' | url }}" class="home-link">
+				<a href="{{ '/' | url }}" class="home--link">
 					{% include "components/logo.njk" %}
 					<span class="is-visually-hidden">{{ site.name }}</span>
 				</a>
@@ -19,18 +19,9 @@
 			{{ layoutContent | safe }}
 		</main>
 
-		{% include "components/footer.njk" %}
+		<!-- {% include "components/footer.njk" %} -->
 
-		{# <script>
-  	if ("serviceWorker" in navigator) {
-    	navigator.serviceWorker
-      	.register("/service-worker.js")
-      	.then(function() {
-        	console.log("ServiceWorker has been registered!");
-      	})
-      	.catch(console.error);
-  	}
-		</script> #}
+		<script	src="/_includes/assets/js/sw.js"></script>
 
 	</body>	
 
