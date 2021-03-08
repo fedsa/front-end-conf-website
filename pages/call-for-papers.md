@@ -9,7 +9,7 @@ permalink: /call-for-papers/index.html
 
 <p>We need some text and what not here</p>
 
-<form name="contact" method="POST" action="/success/" netlify data-netlify="true" netlify-honeypot="bot-field" class="grid join-form">
+<form name="paper-submission" method="POST" action="/success/" netlify data-netlify="true" netlify-honeypot="bot-field" class="grid join-form">
   <p class="is-hidden">
     <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
   </p>
