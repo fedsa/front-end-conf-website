@@ -6,7 +6,7 @@ permalink: /about/index.html
 navtitle: About
 metaTitle: Frontend 2021 Above
 metaDesc: About the FEDSA front-end conference 2021
-socialImage: /static/images/feconf-logo.svg
+socialImage: /static/images/feconf-logo.png
 ---
 Frontend Conf is a conference for South African front-end developers by South African front-end developers.
 
