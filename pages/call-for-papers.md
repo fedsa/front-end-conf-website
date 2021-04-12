@@ -6,7 +6,7 @@ navtitle: Call for papers
 date: 2021-03-06
 permalink: /call-for-papers/index.html
 metaTitle: Frontend 2021 Call For Papers
-metaDesc: FEDSA front-end conference 2021
+metaDesc: FEDSA frontend conference 2021
 socialImage: /static/images/feconf-logo.png
 ---
 

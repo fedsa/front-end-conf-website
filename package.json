@@ -1,7 +1,7 @@
 {
   "name": "front-end-conf",
   "version": "1.0.0",
-  "description": "Front-end conference site using Eleventy and Netlfiy CMS.",
+  "description": "Frontend conference site using Eleventy and Netlfiy CMS.",
   "scripts": {
     "build": "npx eleventy",
     "watch": "npx eleventy --watch",

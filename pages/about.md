@@ -5,16 +5,16 @@ tags: nav
 permalink: /about/index.html
 navtitle: About
 metaTitle: Frontend 2021 Above
-metaDesc: About the FEDSA front-end conference 2021
+metaDesc: About the FEDSA frontend conference 2021
 socialImage: /static/images/feconf-logo.png
 ---
-Frontend Conf is a conference for South African front-end developers by South African front-end developers.
+Frontend Conf is a conference for South African frontend developers by South African frontend developers.
 
-The first Frontend Conf grew out of a dissatisfaction felt by several front-end developers around the lack of representation within the annual South African conference circuit. Whereas several communities had super successful and long-standing gatherings - for example, the phenomenal PyConZA and Wordcamp events - there appeared to be a lack of inclusive, sustainable and affordable front-end development equivalents.
+The first Frontend Conf grew out of a dissatisfaction felt by several frontend developers around the lack of representation within the annual South African conference circuit. Whereas several communities had super successful and long-standing gatherings - for example, the phenomenal PyConZA and Wordcamp events - there appeared to be a lack of inclusive, sustainable and affordable frontend development equivalents.
 
 ## Goals
 
-Frontend Conf's goal is to create such a space - a space for all current and upcoming practitioners to share knowledge and build the human connections required to develop a more resilient South African web landscape - both for practitioners and users. This means that beyond merely focusing on core front-end development technology (HTML, CSS and JavaScript), we also seek to create a space to share knowledge and practices around the fields of user experience, visual design, team dynamics, personal growth and how the front-end development community should stand in relation to the broader South African landscape.
+Frontend Conf's goal is to create such a space - a space for all current and upcoming practitioners to share knowledge and build the human connections required to develop a more resilient South African web landscape - both for practitioners and users. This means that beyond merely focusing on core frontend development technology (HTML, CSS and JavaScript), we also seek to create a space to share knowledge and practices around the fields of user experience, visual design, team dynamics, personal growth and how the frontend development community should stand in relation to the broader South African landscape.
 
 Above all, we want to make sure that Frontend Conf is a radically inclusive space. This means that we commit ourselves to be aware of the following social realities experienced by many South Africans - while being open to making trade-offs and learning how to speak to them:
 - The real-world legacy of South Africa's turbulent political history.
@@ -33,4 +33,4 @@ The core team behind Frontend Conf is as follows (in alphabetical order):
 - [Leandri Nieuwoudt](https://github.com/Lean3Viljoen94)
 - [Schalk Venter](https://github.com/schalkventer)
 
-However, all work done by the team is exclusively after-hours and with no monetary compensation. All revenue goes directly to [Front-end Development South Africa](https://fedsa.org/), a registered non-profit (NPC Number: 2020/159987/08) which covers the operation costs of Frontend Conf. As such, the team is limited by our after-hours capacity and leave days leading up to and during the event. If our above values and goal resonate with you, please consider getting involved as a volunteer by reaching out to [info@fedsa.org](mailto:info@fedsa.org).
+However, all work done by the team is exclusively after-hours and with no monetary compensation. All revenue goes directly to [Frontend Development South Africa](https://fedsa.org/), a registered non-profit (NPC Number: 2020/159987/08) which covers the operation costs of Frontend Conf. As such, the team is limited by our after-hours capacity and leave days leading up to and during the event. If our above values and goal resonate with you, please consider getting involved as a volunteer by reaching out to [info@fedsa.org](mailto:info@fedsa.org).
