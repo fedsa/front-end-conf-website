@@ -10,7 +10,7 @@ metaDesc: FEDSA front-end conference 2021
 socialImage: /static/images/feconf-logo.png
 ---
 
-<p>We need some text and what not here</p>
+<p>Submit your proposal below.</p>
 
 <form name="paper-submission" method="POST" action="/success/" netlify data-netlify="true" netlify-honeypot="bot-field" class="grid join-form">
   <p class="is-hidden">
