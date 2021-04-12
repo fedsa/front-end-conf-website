@@ -2,6 +2,8 @@
 title: Code of conduct
 date: 2021-03-07
 tags: nav
+metaTitle: Frontend 2021 Code of Conduct
+metaDesc: FEDSA front-end conference 2021 Code of Conduct
 permalink: /code-of-conduct/index.html
 navtitle: Code of conduct
 ---
