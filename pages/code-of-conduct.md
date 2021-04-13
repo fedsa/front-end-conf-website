@@ -6,6 +6,7 @@ metaTitle: Frontend 2021 Code of Conduct
 metaDesc: FEDSA frontend conference 2021 Code of Conduct
 permalink: /code-of-conduct/index.html
 navtitle: Code of conduct
+socialImage: https://frontend.org.za/static/images/feconf-logo.png
 ---
 
 
