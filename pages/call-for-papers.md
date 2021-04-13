@@ -7,7 +7,7 @@ date: 2021-03-06
 permalink: /call-for-papers/index.html
 metaTitle: Frontend 2021 Call For Papers
 metaDesc: FEDSA frontend conference 2021
-socialImage: /static/images/feconf-logo.png
+socialImage: https://frontend.org.za/static/images/feconf-logo.png
 ---
 
 <p>Submit your proposal below.</p>
